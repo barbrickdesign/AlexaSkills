@@ -21,7 +21,7 @@
     "apis": {
       "custom": {
         "endpoint": {
-          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-I Want to Play a Game Daily Riddle-default-default-1777789576120"
+          "sourceDir": "lambda"
         }
       }
     },

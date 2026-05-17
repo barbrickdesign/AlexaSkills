@@ -3,17 +3,17 @@
 
 const Alexa = require('ask-sdk-core');
 
-// Financial Literacy Tutor — category: guide, theme: espionage
+// Financial Literacy Tutor — category: guide, theme: finance
 
 const LaunchRequestHandler = {
   canHandle(handlerInput) {
     return Alexa.getRequestType(handlerInput.requestEnvelope) === 'LaunchRequest';
   },
   handle(handlerInput) {
-    const speakOutput = "Financial Literacy Tutor is your expert top-secret guide for intelligence world. Ask for tips, guidance, or say give me advice for your first recommendation.";
+    const speakOutput = "Financial Literacy Tutor is your expert financially savvy guide for the marketplace. Ask for tips, guidance, or say give me advice for your first recommendation.";
     return handlerInput.responseBuilder
       .speak(speakOutput)
-      .reprompt("Say give me advice or ask for tips about intelligence world.")
+      .reprompt("Say give me advice or ask for tips about the marketplace.")
       .getResponse();
   }
 };
@@ -24,10 +24,10 @@ const AdviceIntentHandler = {
       && Alexa.getIntentName(handlerInput.requestEnvelope) === 'AdviceIntent';
   },
   handle(handlerInput) {
-    const speakOutput = "Here's your top-secret guide tip for intelligence world: Success in intelligence world comes from preparation, adaptability, and understanding the key principles that govern this environment. Focus on foundational skills first, then build toward mastery through consistent practice.";
+    const speakOutput = "Here's your financially savvy guide tip for the marketplace: Success in the marketplace comes from preparation, adaptability, and understanding the key principles that govern this environment. Focus on foundational skills first, then build toward mastery through consistent practice.";
     return handlerInput.responseBuilder
       .speak(speakOutput)
-      .reprompt("Say give me advice or ask for tips about intelligence world.")
+      .reprompt("Say give me advice or ask for tips about the marketplace.")
       .getResponse();
   }
 };
@@ -38,10 +38,10 @@ const HelpIntentHandler = {
       && Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.HelpIntent';
   },
   handle(handlerInput) {
-    const speakOutput = "Financial Literacy Tutor provides top-secret guidance and expert advice for navigating intelligence world. Say give me advice or give me a tip to get started.";
+    const speakOutput = "Financial Literacy Tutor provides financially savvy guidance and expert advice for navigating the marketplace. Say give me advice or give me a tip to get started.";
     return handlerInput.responseBuilder
       .speak(speakOutput)
-      .reprompt("Say give me advice or ask for tips about intelligence world.")
+      .reprompt("Say give me advice or ask for tips about the marketplace.")
       .getResponse();
   }
 };
@@ -53,7 +53,7 @@ const CancelAndStopIntentHandler = {
         || Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.StopIntent');
   },
   handle(handlerInput) {
-    const speakOutput = "Good luck out there. Remember your top-secret guide training!";
+    const speakOutput = "Good luck out there. Remember your financially savvy guide training!";
     return handlerInput.responseBuilder
       .speak(speakOutput)
       .getResponse();
@@ -69,7 +69,7 @@ const FallbackIntentHandler = {
     const speakOutput = "Try saying give me advice or give me a tip.";
     return handlerInput.responseBuilder
       .speak(speakOutput)
-      .reprompt("Say give me advice or ask for tips about intelligence world.")
+      .reprompt("Say give me advice or ask for tips about the marketplace.")
       .getResponse();
   }
 };
@@ -89,10 +89,10 @@ const UnhandledIntentHandler = {
   },
   handle(handlerInput) {
     const intentName = Alexa.getIntentName(handlerInput.requestEnvelope);
-    const speakOutput = `I heard ${intentName}, but Financial Literacy Tutor works best with its main commands right now. Financial Literacy Tutor provides top-secret guidance and expert advice for navigating intelligence world. Say give me advice or give me a tip to get started.`;
+    const speakOutput = `I heard ${intentName}, but Financial Literacy Tutor works best with its main commands right now. Financial Literacy Tutor provides financially savvy guidance and expert advice for navigating the marketplace. Say give me advice or give me a tip to get started.`;
     return handlerInput.responseBuilder
       .speak(speakOutput)
-      .reprompt("Say give me advice or ask for tips about intelligence world.")
+      .reprompt("Say give me advice or ask for tips about the marketplace.")
       .getResponse();
   }
 };
