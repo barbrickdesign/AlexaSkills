@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Test your knowledge of Mount Olympus with olympian trivia questions. Challenge yourself on lore, facts, and memorable moments from Mount Olympus.",
+          "examplePhrases": [
+            "Alexa, open Olympian God Trivia Challenge",
+            "start trivia",
+            "quiz me"
+          ],
+          "name": "Olympian God Trivia Challenge",
+          "description": "Test your knowledge of Mount Olympus with olympian trivia questions. Challenge yourself on lore, facts, and memorable moments from Mount Olympus."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Olympian God Trivia Challenge\" to launch. Follow the prompts to interact with the skill.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Olympian God Trivia Challenge-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

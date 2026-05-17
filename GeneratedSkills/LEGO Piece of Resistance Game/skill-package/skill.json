@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Embark on a brick-built interactive adventure in the LEGO universe. Make choices, face challenges, and shape the outcome of your story.",
+          "examplePhrases": [
+            "Alexa, open LEGO Piece of Resistance Game",
+            "start game",
+            "let's play"
+          ],
+          "name": "LEGO Piece of Resistance Game",
+          "description": "Embark on a brick-built interactive adventure in the LEGO universe. Make choices, face challenges, and shape the outcome of your story."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open LEGO Piece of Resistance Game\" to launch. Follow the prompts to interact with the skill.",
+      "category": "GAMES_TRIVIA_AND_ACCESSORIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-LEGO Piece of Resistance Game-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

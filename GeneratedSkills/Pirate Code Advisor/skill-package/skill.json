@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Interact with the voices and wisdom of the high seas. Get swashbuckling quotes, character lines, and memorable dialogue delivered straight to your Alexa device.",
+          "examplePhrases": [
+            "Alexa, open Pirate Code Advisor",
+            "speak",
+            "give me a line"
+          ],
+          "name": "Pirate Code Advisor",
+          "description": "Interact with the voices and wisdom of the high seas. Get swashbuckling quotes, character lines, and memorable dialogue delivered straight to your Alexa device."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Pirate Code Advisor\" to launch. Follow the prompts to interact with the skill.",
+      "category": "ENTERTAINMENT",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Pirate Code Advisor-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

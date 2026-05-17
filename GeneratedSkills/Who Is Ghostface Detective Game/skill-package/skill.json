@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Embark on a terrifying interactive adventure in the horror realm. Make choices, face challenges, and shape the outcome of your story.",
+          "examplePhrases": [
+            "Alexa, open Who Is Ghostface Detective Game",
+            "start game",
+            "let's play"
+          ],
+          "name": "Who Is Ghostface Detective Game",
+          "description": "Embark on a terrifying interactive adventure in the horror realm. Make choices, face challenges, and shape the outcome of your story."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Who Is Ghostface Detective Game\" to launch. Follow the prompts to interact with the skill.",
+      "category": "GAMES_TRIVIA_AND_ACCESSORIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Who Is Ghostface Detective Game-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

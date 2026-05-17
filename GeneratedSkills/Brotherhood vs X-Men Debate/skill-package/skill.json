@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Brotherhood vs X-Men Debate is a heroic Alexa skill designed to assist you with everyday tasks related to Marvel universe.",
+          "examplePhrases": [
+            "Alexa, open Brotherhood vs X-Men Debate",
+            "help",
+            "start"
+          ],
+          "name": "Brotherhood vs X-Men Debate",
+          "description": "Brotherhood vs X-Men Debate is a heroic Alexa skill designed to assist you with everyday tasks related to Marvel universe."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Brotherhood vs X-Men Debate\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Brotherhood vs X-Men Debate-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

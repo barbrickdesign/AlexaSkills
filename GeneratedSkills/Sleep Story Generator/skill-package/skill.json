@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Sleep Story Generator is a wellness Alexa skill designed to assist you with everyday tasks related to a peaceful space.",
+          "examplePhrases": [
+            "Alexa, open Sleep Story Generator",
+            "help",
+            "start"
+          ],
+          "name": "Sleep Story Generator",
+          "description": "Sleep Story Generator is a wellness Alexa skill designed to assist you with everyday tasks related to a peaceful space."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Sleep Story Generator\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Sleep Story Generator-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

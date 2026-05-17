@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Your essential versatile guide to your world. Get expert tips, strategies, and advice to help you navigate your world with confidence.",
+          "examplePhrases": [
+            "Alexa, open Appointment Companion",
+            "give me advice",
+            "guide me"
+          ],
+          "name": "Appointment Companion",
+          "description": "Your essential versatile guide to your world. Get expert tips, strategies, and advice to help you navigate your world with confidence."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Appointment Companion\" to launch. Follow the prompts to interact with the skill.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Temple Trap Escape Puzzle is a adventurous Alexa skill designed to assist you with everyday tasks related to ancient ruins.",
+          "examplePhrases": [
+            "Alexa, open Temple Trap Escape Puzzle",
+            "help",
+            "start"
+          ],
+          "name": "Temple Trap Escape Puzzle",
+          "description": "Temple Trap Escape Puzzle is a adventurous Alexa skill designed to assist you with everyday tasks related to ancient ruins."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Temple Trap Escape Puzzle\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Temple Trap Escape Puzzle-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

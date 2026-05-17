@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Embark on a versatile interactive adventure in your world. Make choices, face challenges, and shape the outcome of your story.",
+          "examplePhrases": [
+            "Alexa, open Anti-Hero Code of Ethics Game",
+            "start game",
+            "let's play"
+          ],
+          "name": "Anti-Hero Code of Ethics Game",
+          "description": "Embark on a versatile interactive adventure in your world. Make choices, face challenges, and shape the outcome of your story."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Anti-Hero Code of Ethics Game\" to launch. Follow the prompts to interact with the skill.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

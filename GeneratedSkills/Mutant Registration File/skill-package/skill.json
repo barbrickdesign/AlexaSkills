@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Mutant Registration File is a heroic Alexa skill designed to assist you with everyday tasks related to Marvel universe.",
+          "examplePhrases": [
+            "Alexa, open Mutant Registration File",
+            "help",
+            "start"
+          ],
+          "name": "Mutant Registration File",
+          "description": "Mutant Registration File is a heroic Alexa skill designed to assist you with everyday tasks related to Marvel universe."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Mutant Registration File\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Mutant Registration File-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

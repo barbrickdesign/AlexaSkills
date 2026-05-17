@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Embark on a epic interactive adventure in fantasy realm. Make choices, face challenges, and shape the outcome of your story.",
+          "examplePhrases": [
+            "Alexa, open White Witch's Eternal Winter Game",
+            "start game",
+            "let's play"
+          ],
+          "name": "White Witch's Eternal Winter Game",
+          "description": "Embark on a epic interactive adventure in fantasy realm. Make choices, face challenges, and shape the outcome of your story."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open White Witch's Eternal Winter Game\" to launch. Follow the prompts to interact with the skill.",
+      "category": "GAMES_TRIVIA_AND_ACCESSORIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-White Witch's Eternal Winter Game-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Identify any archaeology entity, creature, or specimen from ancient ruins. Describe what you've encountered and get an instant adventurous classification.",
+          "examplePhrases": [
+            "Alexa, open Ancient Artifact Identifier",
+            "identify something",
+            "classify this"
+          ],
+          "name": "Ancient Artifact Identifier",
+          "description": "Identify any archaeology entity, creature, or specimen from ancient ruins. Describe what you've encountered and get an instant adventurous classification."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Ancient Artifact Identifier\" to launch. Follow the prompts to interact with the skill.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

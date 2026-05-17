@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Find out which shrek character or type you truly are with this ogre-sized personality quiz. Answer a series of questions and discover your result from Far Far A",
+          "examplePhrases": [
+            "Alexa, open What Are You Doing in My Swamp Daily Quo",
+            "start the quiz",
+            "yes, I'm ready"
+          ],
+          "name": "What Are You Doing in My Swamp Daily Quote",
+          "description": "Find out which shrek character or type you truly are with this ogre-sized personality quiz. Answer a series of questions and discover your result from Far Far Away."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open What Are You Doing in My Swamp Daily Quote\" to launch. Follow the prompts to interact with the skill.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-What Are You Doing in My Swamp Daily Quote-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

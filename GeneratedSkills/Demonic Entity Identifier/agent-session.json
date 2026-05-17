@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-2B7BFE93",
+  "skillName": "Demonic Entity Identifier",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Demonic Entity Identifier",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.630Z",
+  "updatedAt": "2026-05-11T16:06:43.630Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

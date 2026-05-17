@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Woodsboro Survivor Quiz is a versatile Alexa skill designed to assist you with everyday tasks related to your world.",
+          "examplePhrases": [
+            "Alexa, open Woodsboro Survivor Quiz",
+            "help",
+            "start"
+          ],
+          "name": "Woodsboro Survivor Quiz",
+          "description": "Woodsboro Survivor Quiz is a versatile Alexa skill designed to assist you with everyday tasks related to your world."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Woodsboro Survivor Quiz\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Woodsboro Survivor Quiz-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

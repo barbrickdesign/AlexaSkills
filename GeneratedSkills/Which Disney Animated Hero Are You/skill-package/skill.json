@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Find out which disney magic character or type you truly are with this magical personality quiz. Answer a series of questions and discover your result from Disne",
+          "examplePhrases": [
+            "Alexa, open Which Disney Animated Hero Are You",
+            "start the quiz",
+            "yes, I'm ready"
+          ],
+          "name": "Which Disney Animated Hero Are You",
+          "description": "Find out which disney magic character or type you truly are with this magical personality quiz. Answer a series of questions and discover your result from Disney realm."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Which Disney Animated Hero Are You\" to launch. Follow the prompts to interact with the skill.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Which Disney Animated Hero Are You-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

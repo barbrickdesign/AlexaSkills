@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-3F03857E",
+  "skillName": "Dogfight Maneuver Simulator Game",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Dogfight Maneuver Simulator Game",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.635Z",
+  "updatedAt": "2026-05-11T16:06:43.635Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

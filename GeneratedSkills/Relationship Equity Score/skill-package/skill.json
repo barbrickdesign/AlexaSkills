@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Relationship Equity Score is a versatile Alexa skill designed to assist you with everyday tasks related to your world.",
+          "examplePhrases": [
+            "Alexa, open Relationship Equity Score",
+            "help",
+            "start"
+          ],
+          "name": "Relationship Equity Score",
+          "description": "Relationship Equity Score is a versatile Alexa skill designed to assist you with everyday tasks related to your world."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Relationship Equity Score\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Relationship Equity Score-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

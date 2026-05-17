@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-8B280AD9",
+  "skillName": "House Atreides vs Harkonnen Lore Quiz",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/House Atreides vs Harkonnen Lore Quiz",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.671Z",
+  "updatedAt": "2026-05-11T16:06:43.671Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

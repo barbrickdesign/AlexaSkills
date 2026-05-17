@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Voice-Based CBT Prompts is a wellness Alexa skill designed to assist you with everyday tasks related to a peaceful space.",
+          "examplePhrases": [
+            "Alexa, open Voice-Based CBT Prompts",
+            "help",
+            "start"
+          ],
+          "name": "Voice-Based CBT Prompts",
+          "description": "Voice-Based CBT Prompts is a wellness Alexa skill designed to assist you with everyday tasks related to a peaceful space."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Voice-Based CBT Prompts\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Voice-Based CBT Prompts-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

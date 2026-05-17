@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Princess Fiona Empowerment Daily is a ogre-sized Alexa skill designed to assist you with everyday tasks related to Far Far Away.",
+          "examplePhrases": [
+            "Alexa, open Princess Fiona Empowerment Daily",
+            "help",
+            "start"
+          ],
+          "name": "Princess Fiona Empowerment Daily",
+          "description": "Princess Fiona Empowerment Daily is a ogre-sized Alexa skill designed to assist you with everyday tasks related to Far Far Away."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Princess Fiona Empowerment Daily\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Princess Fiona Empowerment Daily-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

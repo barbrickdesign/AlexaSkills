@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-D5F9B751",
+  "skillName": "Velociraptor Intelligence Briefing",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Velociraptor Intelligence Briefing",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.813Z",
+  "updatedAt": "2026-05-11T16:06:43.813Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

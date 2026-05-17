@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Stay informed with versatile briefings and status updates from your world. Get the latest news, reports, and important information delivered by voice.",
+          "examplePhrases": [
+            "Alexa, open Anti-Villain League Mission Briefing",
+            "start briefing",
+            "status report"
+          ],
+          "name": "Anti-Villain League Mission Briefing",
+          "description": "Stay informed with versatile briefings and status updates from your world. Get the latest news, reports, and important information delivered by voice."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Anti-Villain League Mission Briefing\" to launch. Follow the prompts to interact with the skill.",
+      "category": "NEWS",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

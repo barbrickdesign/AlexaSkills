@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Daily Music Discovery is a rhythmic Alexa skill designed to assist you with everyday tasks related to the music scene.",
+          "examplePhrases": [
+            "Alexa, open Daily Music Discovery",
+            "help",
+            "start"
+          ],
+          "name": "Daily Music Discovery",
+          "description": "Daily Music Discovery is a rhythmic Alexa skill designed to assist you with everyday tasks related to the music scene."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Daily Music Discovery\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Daily Music Discovery-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

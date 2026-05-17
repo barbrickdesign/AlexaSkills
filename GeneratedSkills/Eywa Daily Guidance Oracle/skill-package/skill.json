@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Receive na'vi prophecies and guidance from the oracle of Pandora. Ask your questions and discover what the forces of Pandora reveal about your path.",
+          "examplePhrases": [
+            "Alexa, open Eywa Daily Guidance Oracle",
+            "reveal",
+            "give me a prophecy"
+          ],
+          "name": "Eywa Daily Guidance Oracle",
+          "description": "Receive na'vi prophecies and guidance from the oracle of Pandora. Ask your questions and discover what the forces of Pandora reveal about your path."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Eywa Daily Guidance Oracle\" to launch. Follow the prompts to interact with the skill.",
+      "category": "LIFESTYLE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Eywa Daily Guidance Oracle-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

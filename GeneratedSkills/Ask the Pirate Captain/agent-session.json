@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-7AAD1A2E",
+  "skillName": "Ask the Pirate Captain",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Ask the Pirate Captain",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.587Z",
+  "updatedAt": "2026-05-11T16:06:43.587Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

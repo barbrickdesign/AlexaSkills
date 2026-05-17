@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Discover something new every day with fitness-focused facts about the gym. Expand your knowledge with fascinating insights from the gym.",
+          "examplePhrases": [
+            "Alexa, open Stephen King Daily Scare",
+            "give me a fact",
+            "today's fact"
+          ],
+          "name": "Stephen King Daily Scare",
+          "description": "Discover something new every day with fitness-focused facts about the gym. Expand your knowledge with fascinating insights from the gym."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Stephen King Daily Scare\" to launch. Follow the prompts to interact with the skill.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Stephen King Daily Scare-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

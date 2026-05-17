@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Identify any sci-fi horror entity, creature, or specimen from deep space. Describe what you've encountered and get an instant extraterrestrial classification.",
+          "examplePhrases": [
+            "Alexa, open Alien Species Identifier",
+            "identify something",
+            "classify this"
+          ],
+          "name": "Alien Species Identifier",
+          "description": "Identify any sci-fi horror entity, creature, or specimen from deep space. Describe what you've encountered and get an instant extraterrestrial classification."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Alien Species Identifier\" to launch. Follow the prompts to interact with the skill.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

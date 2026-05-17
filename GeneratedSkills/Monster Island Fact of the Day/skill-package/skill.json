@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Discover something new every day with titan-sized facts about Monster Island. Expand your knowledge with fascinating insights from Monster Island.",
+          "examplePhrases": [
+            "Alexa, open Monster Island Fact of the Day",
+            "give me a fact",
+            "today's fact"
+          ],
+          "name": "Monster Island Fact of the Day",
+          "description": "Discover something new every day with titan-sized facts about Monster Island. Expand your knowledge with fascinating insights from Monster Island."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Monster Island Fact of the Day\" to launch. Follow the prompts to interact with the skill.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Monster Island Fact of the Day-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

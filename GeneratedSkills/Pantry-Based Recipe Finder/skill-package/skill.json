@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Pantry-Based Recipe Finder is a culinary Alexa skill designed to assist you with everyday tasks related to the kitchen.",
+          "examplePhrases": [
+            "Alexa, open Pantry-Based Recipe Finder",
+            "help",
+            "start"
+          ],
+          "name": "Pantry-Based Recipe Finder",
+          "description": "Pantry-Based Recipe Finder is a culinary Alexa skill designed to assist you with everyday tasks related to the kitchen."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Pantry-Based Recipe Finder\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Pantry-Based Recipe Finder-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

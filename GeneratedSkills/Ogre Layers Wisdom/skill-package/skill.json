@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Ogre Layers Wisdom is a ogre-sized Alexa skill designed to assist you with everyday tasks related to Far Far Away.",
+          "examplePhrases": [
+            "Alexa, open Ogre Layers Wisdom",
+            "help",
+            "start"
+          ],
+          "name": "Ogre Layers Wisdom",
+          "description": "Ogre Layers Wisdom is a ogre-sized Alexa skill designed to assist you with everyday tasks related to Far Far Away."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Ogre Layers Wisdom\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Ogre Layers Wisdom-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

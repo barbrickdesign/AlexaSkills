@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Daily Appreciation Prompts is a top-secret Alexa skill designed to assist you with everyday tasks related to intelligence world.",
+          "examplePhrases": [
+            "Alexa, open Daily Appreciation Prompts",
+            "help",
+            "start"
+          ],
+          "name": "Daily Appreciation Prompts",
+          "description": "Daily Appreciation Prompts is a top-secret Alexa skill designed to assist you with everyday tasks related to intelligence world."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Daily Appreciation Prompts\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Daily Appreciation Prompts-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

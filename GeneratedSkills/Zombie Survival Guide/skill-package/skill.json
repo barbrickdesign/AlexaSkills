@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Your essential survival-ready guide to the wasteland. Get expert tips, strategies, and advice to help you navigate the wasteland with confidence.",
+          "examplePhrases": [
+            "Alexa, open Zombie Survival Guide",
+            "give me advice",
+            "guide me"
+          ],
+          "name": "Zombie Survival Guide",
+          "description": "Your essential survival-ready guide to the wasteland. Get expert tips, strategies, and advice to help you navigate the wasteland with confidence."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Zombie Survival Guide\" to launch. Follow the prompts to interact with the skill.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Zombie Survival Guide-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

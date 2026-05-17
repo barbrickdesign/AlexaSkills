@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Smart-Home Troubleshooter is a stylish Alexa skill designed to assist you with everyday tasks related to the lifestyle scene.",
+          "examplePhrases": [
+            "Alexa, open Smart-Home Troubleshooter",
+            "help",
+            "start"
+          ],
+          "name": "Smart-Home Troubleshooter",
+          "description": "Smart-Home Troubleshooter is a stylish Alexa skill designed to assist you with everyday tasks related to the lifestyle scene."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Smart-Home Troubleshooter\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Smart-Home Troubleshooter-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Test your knowledge of Arrakis with desert-world trivia questions. Challenge yourself on lore, facts, and memorable moments from Arrakis.",
+          "examplePhrases": [
+            "Alexa, open Dune Lore Trivia Challenge",
+            "start trivia",
+            "quiz me"
+          ],
+          "name": "Dune Lore Trivia Challenge",
+          "description": "Test your knowledge of Arrakis with desert-world trivia questions. Challenge yourself on lore, facts, and memorable moments from Arrakis."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Dune Lore Trivia Challenge\" to launch. Follow the prompts to interact with the skill.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Dune Lore Trivia Challenge-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

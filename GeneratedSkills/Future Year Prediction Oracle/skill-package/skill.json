@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Receive versatile prophecies and guidance from the oracle of your world. Ask your questions and discover what the forces of your world reveal about your path.",
+          "examplePhrases": [
+            "Alexa, open Future Year Prediction Oracle",
+            "reveal",
+            "give me a prophecy"
+          ],
+          "name": "Future Year Prediction Oracle",
+          "description": "Receive versatile prophecies and guidance from the oracle of your world. Ask your questions and discover what the forces of your world reveal about your path."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Future Year Prediction Oracle\" to launch. Follow the prompts to interact with the skill.",
+      "category": "LIFESTYLE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Future Year Prediction Oracle-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

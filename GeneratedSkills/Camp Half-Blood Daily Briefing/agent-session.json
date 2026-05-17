@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-8BDB641A",
+  "skillName": "Camp Half-Blood Daily Briefing",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Camp Half-Blood Daily Briefing",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.607Z",
+  "updatedAt": "2026-05-11T16:06:43.607Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

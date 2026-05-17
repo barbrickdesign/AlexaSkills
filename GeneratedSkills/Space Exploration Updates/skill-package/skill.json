@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Space Exploration Updates is a cosmic Alexa skill designed to assist you with everyday tasks related to the cosmos.",
+          "examplePhrases": [
+            "Alexa, open Space Exploration Updates",
+            "help",
+            "start"
+          ],
+          "name": "Space Exploration Updates",
+          "description": "Space Exploration Updates is a cosmic Alexa skill designed to assist you with everyday tasks related to the cosmos."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Space Exploration Updates\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Space Exploration Updates-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

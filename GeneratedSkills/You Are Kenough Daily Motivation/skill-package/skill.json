@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Start each day with a fresh Barbie-world quote and inspiration from Barbieland. Let the wisdom of Barbieland guide and motivate you.",
+          "examplePhrases": [
+            "Alexa, open You Are Kenough Daily Motivation",
+            "give me a quote",
+            "inspire me"
+          ],
+          "name": "You Are Kenough Daily Motivation",
+          "description": "Start each day with a fresh Barbie-world quote and inspiration from Barbieland. Let the wisdom of Barbieland guide and motivate you."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open You Are Kenough Daily Motivation\" to launch. Follow the prompts to interact with the skill.",
+      "category": "LIFESTYLE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-You Are Kenough Daily Motivation-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

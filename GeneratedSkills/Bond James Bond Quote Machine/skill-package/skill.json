@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Interact with the voices and wisdom of intelligence world. Get top-secret quotes, character lines, and memorable dialogue delivered straight to your Alexa devic",
+          "examplePhrases": [
+            "Alexa, open Bond James Bond Quote Machine",
+            "speak",
+            "give me a line"
+          ],
+          "name": "Bond James Bond Quote Machine",
+          "description": "Interact with the voices and wisdom of intelligence world. Get top-secret quotes, character lines, and memorable dialogue delivered straight to your Alexa device."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Bond James Bond Quote Machine\" to launch. Follow the prompts to interact with the skill.",
+      "category": "ENTERTAINMENT",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Bond James Bond Quote Machine-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Pet-Feeder Scheduler is a pet-friendly Alexa skill designed to assist you with everyday tasks related to the animal kingdom.",
+          "examplePhrases": [
+            "Alexa, open Pet-Feeder Scheduler",
+            "help",
+            "start"
+          ],
+          "name": "Pet-Feeder Scheduler",
+          "description": "Pet-Feeder Scheduler is a pet-friendly Alexa skill designed to assist you with everyday tasks related to the animal kingdom."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Pet-Feeder Scheduler\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Pet-Feeder Scheduler-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

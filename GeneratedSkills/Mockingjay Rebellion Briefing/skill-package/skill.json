@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Stay informed with galactic briefings and status updates from galaxy far, far away. Get the latest news, reports, and important information delivered by voice.",
+          "examplePhrases": [
+            "Alexa, open Mockingjay Rebellion Briefing",
+            "start briefing",
+            "status report"
+          ],
+          "name": "Mockingjay Rebellion Briefing",
+          "description": "Stay informed with galactic briefings and status updates from galaxy far, far away. Get the latest news, reports, and important information delivered by voice."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Mockingjay Rebellion Briefing\" to launch. Follow the prompts to interact with the skill.",
+      "category": "NEWS",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Mockingjay Rebellion Briefing-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

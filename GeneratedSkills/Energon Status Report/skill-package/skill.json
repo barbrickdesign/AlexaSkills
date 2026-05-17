@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Stay informed with robotic briefings and status updates from Cybertron. Get the latest news, reports, and important information delivered by voice.",
+          "examplePhrases": [
+            "Alexa, open Energon Status Report",
+            "start briefing",
+            "status report"
+          ],
+          "name": "Energon Status Report",
+          "description": "Stay informed with robotic briefings and status updates from Cybertron. Get the latest news, reports, and important information delivered by voice."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Energon Status Report\" to launch. Follow the prompts to interact with the skill.",
+      "category": "NEWS",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Energon Status Report-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

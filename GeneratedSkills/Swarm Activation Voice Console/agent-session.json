@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-F024588D",
+  "skillName": "Swarm Activation Voice Console",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Swarm Activation Voice Console",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.790Z",
+  "updatedAt": "2026-05-11T16:06:43.790Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

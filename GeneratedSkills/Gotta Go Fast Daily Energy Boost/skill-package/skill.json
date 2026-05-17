@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Start each day with a fresh supersonic quote and inspiration from Green Hill Zone. Let the wisdom of Green Hill Zone guide and motivate you.",
+          "examplePhrases": [
+            "Alexa, open Gotta Go Fast Daily Energy Boost",
+            "give me a quote",
+            "inspire me"
+          ],
+          "name": "Gotta Go Fast Daily Energy Boost",
+          "description": "Start each day with a fresh supersonic quote and inspiration from Green Hill Zone. Let the wisdom of Green Hill Zone guide and motivate you."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Gotta Go Fast Daily Energy Boost\" to launch. Follow the prompts to interact with the skill.",
+      "category": "LIFESTYLE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Gotta Go Fast Daily Energy Boost-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

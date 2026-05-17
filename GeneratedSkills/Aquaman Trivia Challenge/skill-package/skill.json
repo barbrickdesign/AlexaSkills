@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Test your knowledge of DC universe with legendary trivia questions. Challenge yourself on lore, facts, and memorable moments from DC universe.",
+          "examplePhrases": [
+            "Alexa, open Aquaman Trivia Challenge",
+            "start trivia",
+            "quiz me"
+          ],
+          "name": "Aquaman Trivia Challenge",
+          "description": "Test your knowledge of DC universe with legendary trivia questions. Challenge yourself on lore, facts, and memorable moments from DC universe."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Aquaman Trivia Challenge\" to launch. Follow the prompts to interact with the skill.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

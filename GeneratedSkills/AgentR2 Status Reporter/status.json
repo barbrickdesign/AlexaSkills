@@ -1,0 +1,27 @@
+{
+  "customized": true,
+  "category": "briefing",
+  "builtAt": "2026-05-04T03:43:13.184Z",
+  "rootib": "RootIB: RB-20260511150354-F2FB33E9",
+  "generated": true,
+  "published": false,
+  "agentSession": {
+    "provider": "local-session",
+    "mode": "local-fallback",
+    "status": "started",
+    "startedAt": "2026-05-11T23:26:55.552Z",
+    "updatedAt": "2026-05-11T23:26:55.552Z",
+    "promptFile": "agent-session.md",
+    "placeholderSignals": []
+  },
+  "functionalCodeReady": true,
+  "deploymentReady": true,
+  "preDeployChecks": {
+    "ranAt": "2026-05-11T23:27:07Z",
+    "passed": true,
+    "errors": []
+  },
+  "deployed": false,
+  "lastDeployResult": "failed",
+  "lastDeployAt": "2026-05-11T23:27:11Z"
+}

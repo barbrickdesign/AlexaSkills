@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "DeLorean Speed and Power Checker is a temporal Alexa skill designed to assist you with everyday tasks related to the timestream.",
+          "examplePhrases": [
+            "Alexa, open DeLorean Speed and Power Checker",
+            "help",
+            "start"
+          ],
+          "name": "DeLorean Speed and Power Checker",
+          "description": "DeLorean Speed and Power Checker is a temporal Alexa skill designed to assist you with everyday tasks related to the timestream."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open DeLorean Speed and Power Checker\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-DeLorean Speed and Power Checker-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "MCU Phase Timeline Navigator is a heroic Alexa skill designed to assist you with everyday tasks related to Marvel universe.",
+          "examplePhrases": [
+            "Alexa, open MCU Phase Timeline Navigator",
+            "help",
+            "start"
+          ],
+          "name": "MCU Phase Timeline Navigator",
+          "description": "MCU Phase Timeline Navigator is a heroic Alexa skill designed to assist you with everyday tasks related to Marvel universe."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open MCU Phase Timeline Navigator\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-MCU Phase Timeline Navigator-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

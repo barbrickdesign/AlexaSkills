@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Start each day with a fresh brick-built quote and inspiration from the LEGO universe. Let the wisdom of the LEGO universe guide and motivate you.",
+          "examplePhrases": [
+            "Alexa, open Lord Business Daily Instructions",
+            "give me a quote",
+            "inspire me"
+          ],
+          "name": "Lord Business Daily Instructions",
+          "description": "Start each day with a fresh brick-built quote and inspiration from the LEGO universe. Let the wisdom of the LEGO universe guide and motivate you."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Lord Business Daily Instructions\" to launch. Follow the prompts to interact with the skill.",
+      "category": "LIFESTYLE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Lord Business Daily Instructions-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

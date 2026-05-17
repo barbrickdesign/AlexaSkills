@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-8BF3C7B1",
+  "skillName": "Ask the Dinosaur Character Skill",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Ask the Dinosaur Character Skill",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.586Z",
+  "updatedAt": "2026-05-11T16:06:43.586Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

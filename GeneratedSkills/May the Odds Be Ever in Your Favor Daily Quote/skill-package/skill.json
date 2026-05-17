@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Start each day with a fresh district quote and inspiration from Panem. Let the wisdom of Panem guide and motivate you.",
+          "examplePhrases": [
+            "Alexa, open May the Odds Be Ever in Your Favor Daily",
+            "give me a quote",
+            "inspire me"
+          ],
+          "name": "May the Odds Be Ever in Your Favor Daily Quote",
+          "description": "Start each day with a fresh district quote and inspiration from Panem. Let the wisdom of Panem guide and motivate you."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open May the Odds Be Ever in Your Favor Daily Quote\" to launch. Follow the prompts to interact with the skill.",
+      "category": "LIFESTYLE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-May the Odds Be Ever in Your Favor Daily Quote-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-33948685",
+  "skillName": "Unit Converter",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Unit Converter",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.813Z",
+  "updatedAt": "2026-05-11T16:06:43.813Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

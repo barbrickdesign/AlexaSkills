@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "History Time Machine is a temporal Alexa skill designed to assist you with everyday tasks related to the timestream.",
+          "examplePhrases": [
+            "Alexa, open History Time Machine",
+            "help",
+            "start"
+          ],
+          "name": "History Time Machine",
+          "description": "History Time Machine is a temporal Alexa skill designed to assist you with everyday tasks related to the timestream."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open History Time Machine\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-History Time Machine-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

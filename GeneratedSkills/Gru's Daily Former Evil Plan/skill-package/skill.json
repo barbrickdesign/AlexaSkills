@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Gru's Daily Former Evil Plan is a versatile Alexa skill designed to assist you with everyday tasks related to your world.",
+          "examplePhrases": [
+            "Alexa, open Gru's Daily Former Evil Plan",
+            "help",
+            "start"
+          ],
+          "name": "Gru's Daily Former Evil Plan",
+          "description": "Gru's Daily Former Evil Plan is a versatile Alexa skill designed to assist you with everyday tasks related to your world."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Gru's Daily Former Evil Plan\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Gru's Daily Former Evil Plan-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

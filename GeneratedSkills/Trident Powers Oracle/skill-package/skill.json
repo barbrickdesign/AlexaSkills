@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Receive legendary prophecies and guidance from the oracle of DC universe. Ask your questions and discover what the forces of DC universe reveal about your path.",
+          "examplePhrases": [
+            "Alexa, open Trident Powers Oracle",
+            "reveal",
+            "give me a prophecy"
+          ],
+          "name": "Trident Powers Oracle",
+          "description": "Receive legendary prophecies and guidance from the oracle of DC universe. Ask your questions and discover what the forces of DC universe reveal about your path."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Trident Powers Oracle\" to launch. Follow the prompts to interact with the skill.",
+      "category": "LIFESTYLE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Trident Powers Oracle-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-2F049FB3",
+  "skillName": "Sith Code vs Jedi Code Duel",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Sith Code vs Jedi Code Duel",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.777Z",
+  "updatedAt": "2026-05-11T16:06:43.777Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

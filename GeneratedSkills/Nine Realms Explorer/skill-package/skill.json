@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Nine Realms Explorer is a epic Alexa skill designed to assist you with everyday tasks related to fantasy realm.",
+          "examplePhrases": [
+            "Alexa, open Nine Realms Explorer",
+            "help",
+            "start"
+          ],
+          "name": "Nine Realms Explorer",
+          "description": "Nine Realms Explorer is a epic Alexa skill designed to assist you with everyday tasks related to fantasy realm."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Nine Realms Explorer\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Nine Realms Explorer-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Test your knowledge of high school with totally fetch trivia questions. Challenge yourself on lore, facts, and memorable moments from high school.",
+          "examplePhrases": [
+            "Alexa, open Teen Movie Lore Challenge",
+            "start trivia",
+            "quiz me"
+          ],
+          "name": "Teen Movie Lore Challenge",
+          "description": "Test your knowledge of high school with totally fetch trivia questions. Challenge yourself on lore, facts, and memorable moments from high school."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Teen Movie Lore Challenge\" to launch. Follow the prompts to interact with the skill.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Teen Movie Lore Challenge-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Griever Threat Alert is a maze-running Alexa skill designed to assist you with everyday tasks related to the Maze.",
+          "examplePhrases": [
+            "Alexa, open Griever Threat Alert",
+            "help",
+            "start"
+          ],
+          "name": "Griever Threat Alert",
+          "description": "Griever Threat Alert is a maze-running Alexa skill designed to assist you with everyday tasks related to the Maze."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Griever Threat Alert\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Griever Threat Alert-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Test your knowledge of the Maze with maze-running trivia questions. Challenge yourself on lore, facts, and memorable moments from the Maze.",
+          "examplePhrases": [
+            "Alexa, open Maze Runner Trivia Challenge",
+            "start trivia",
+            "quiz me"
+          ],
+          "name": "Maze Runner Trivia Challenge",
+          "description": "Test your knowledge of the Maze with maze-running trivia questions. Challenge yourself on lore, facts, and memorable moments from the Maze."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Maze Runner Trivia Challenge\" to launch. Follow the prompts to interact with the skill.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Maze Runner Trivia Challenge-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

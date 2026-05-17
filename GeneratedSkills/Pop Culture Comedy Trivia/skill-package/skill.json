@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Test your knowledge of your world with versatile trivia questions. Challenge yourself on lore, facts, and memorable moments from your world.",
+          "examplePhrases": [
+            "Alexa, open Pop Culture Comedy Trivia",
+            "start trivia",
+            "quiz me"
+          ],
+          "name": "Pop Culture Comedy Trivia",
+          "description": "Test your knowledge of your world with versatile trivia questions. Challenge yourself on lore, facts, and memorable moments from your world."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Pop Culture Comedy Trivia\" to launch. Follow the prompts to interact with the skill.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Pop Culture Comedy Trivia-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

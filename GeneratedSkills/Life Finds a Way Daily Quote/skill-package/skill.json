@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Start each day with a fresh prehistoric quote and inspiration from Jurassic era. Let the wisdom of Jurassic era guide and motivate you.",
+          "examplePhrases": [
+            "Alexa, open Life Finds a Way Daily Quote",
+            "give me a quote",
+            "inspire me"
+          ],
+          "name": "Life Finds a Way Daily Quote",
+          "description": "Start each day with a fresh prehistoric quote and inspiration from Jurassic era. Let the wisdom of Jurassic era guide and motivate you."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Life Finds a Way Daily Quote\" to launch. Follow the prompts to interact with the skill.",
+      "category": "LIFESTYLE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Life Finds a Way Daily Quote-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

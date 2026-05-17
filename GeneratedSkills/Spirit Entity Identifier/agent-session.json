@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-246724F4",
+  "skillName": "Spirit Entity Identifier",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Spirit Entity Identifier",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.783Z",
+  "updatedAt": "2026-05-11T16:06:43.783Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

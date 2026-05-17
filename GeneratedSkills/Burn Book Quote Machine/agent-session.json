@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-DFFCACD9",
+  "skillName": "Burn Book Quote Machine",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Burn Book Quote Machine",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.602Z",
+  "updatedAt": "2026-05-11T16:06:43.602Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Your essential culinary guide to the kitchen. Get expert tips, strategies, and advice to help you navigate the kitchen with confidence.",
+          "examplePhrases": [
+            "Alexa, open Weekly Grocery Planner",
+            "give me advice",
+            "guide me"
+          ],
+          "name": "Weekly Grocery Planner",
+          "description": "Your essential culinary guide to the kitchen. Get expert tips, strategies, and advice to help you navigate the kitchen with confidence."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Weekly Grocery Planner\" to launch. Follow the prompts to interact with the skill.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Weekly Grocery Planner-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

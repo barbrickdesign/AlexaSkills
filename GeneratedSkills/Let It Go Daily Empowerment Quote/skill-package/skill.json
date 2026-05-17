@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Start each day with a fresh icy quote and inspiration from Arendelle. Let the wisdom of Arendelle guide and motivate you.",
+          "examplePhrases": [
+            "Alexa, open Let It Go Daily Empowerment Quote",
+            "give me a quote",
+            "inspire me"
+          ],
+          "name": "Let It Go Daily Empowerment Quote",
+          "description": "Start each day with a fresh icy quote and inspiration from Arendelle. Let the wisdom of Arendelle guide and motivate you."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Let It Go Daily Empowerment Quote\" to launch. Follow the prompts to interact with the skill.",
+      "category": "LIFESTYLE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Let It Go Daily Empowerment Quote-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

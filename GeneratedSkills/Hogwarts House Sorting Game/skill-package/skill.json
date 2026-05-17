@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Find out which wizarding character or type you truly are with this magical personality quiz. Answer a series of questions and discover your result from Wizardin",
+          "examplePhrases": [
+            "Alexa, open Hogwarts House Sorting Game",
+            "start the quiz",
+            "yes, I'm ready"
+          ],
+          "name": "Hogwarts House Sorting Game",
+          "description": "Find out which wizarding character or type you truly are with this magical personality quiz. Answer a series of questions and discover your result from Wizarding World."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Hogwarts House Sorting Game\" to launch. Follow the prompts to interact with the skill.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Hogwarts House Sorting Game-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

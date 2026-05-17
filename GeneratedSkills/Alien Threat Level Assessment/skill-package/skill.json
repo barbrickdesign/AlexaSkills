@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Alien Threat Level Assessment is a extraterrestrial Alexa skill designed to assist you with everyday tasks related to deep space.",
+          "examplePhrases": [
+            "Alexa, open Alien Threat Level Assessment",
+            "help",
+            "start"
+          ],
+          "name": "Alien Threat Level Assessment",
+          "description": "Alien Threat Level Assessment is a extraterrestrial Alexa skill designed to assist you with everyday tasks related to deep space."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Alien Threat Level Assessment\" to launch. Follow the prompts to interact with the skill.",
+      "category": "PRODUCTIVITY",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

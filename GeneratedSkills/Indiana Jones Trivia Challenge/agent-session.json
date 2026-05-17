@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-C2E3F6F8",
+  "skillName": "Indiana Jones Trivia Challenge",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Indiana Jones Trivia Challenge",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.676Z",
+  "updatedAt": "2026-05-11T16:06:43.676Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

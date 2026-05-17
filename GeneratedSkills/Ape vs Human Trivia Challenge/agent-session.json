@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511150354-CFE48BF8",
+  "skillName": "Ape vs Human Trivia Challenge",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Ape vs Human Trivia Challenge",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T23:26:55.576Z",
+  "updatedAt": "2026-05-11T23:26:55.576Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

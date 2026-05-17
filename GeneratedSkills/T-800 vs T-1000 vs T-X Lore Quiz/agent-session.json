@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-B0ACF96D",
+  "skillName": "T-800 vs T-1000 vs T-X Lore Quiz",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/T-800 vs T-1000 vs T-X Lore Quiz",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.791Z",
+  "updatedAt": "2026-05-11T16:06:43.791Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

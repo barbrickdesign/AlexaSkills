@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "First-Aid Instruction Skill is a versatile Alexa skill designed to assist you with everyday tasks related to your world.",
+          "examplePhrases": [
+            "Alexa, open First-Aid Instruction Skill",
+            "help",
+            "start"
+          ],
+          "name": "First-Aid Instruction Skill",
+          "description": "First-Aid Instruction Skill is a versatile Alexa skill designed to assist you with everyday tasks related to your world."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open First-Aid Instruction Skill\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-First-Aid Instruction Skill-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

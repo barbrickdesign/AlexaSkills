@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-67812947",
+  "skillName": "Astral Projection Game",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Astral Projection Game",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.588Z",
+  "updatedAt": "2026-05-11T16:06:43.588Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "A terrifying voice-powered utility skill. Use your voice to manage tasks, track information, and stay organized hands-free.",
+          "examplePhrases": [
+            "Alexa, open Michael Myers Kill Count Tracker",
+            "what can you do",
+            "start"
+          ],
+          "name": "Michael Myers Kill Count Tracker",
+          "description": "A terrifying voice-powered utility skill. Use your voice to manage tasks, track information, and stay organized hands-free."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Michael Myers Kill Count Tracker\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Michael Myers Kill Count Tracker-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Xenomorph Threat Level Scanner is a extraterrestrial Alexa skill designed to assist you with everyday tasks related to deep space.",
+          "examplePhrases": [
+            "Alexa, open Xenomorph Threat Level Scanner",
+            "help",
+            "start"
+          ],
+          "name": "Xenomorph Threat Level Scanner",
+          "description": "Xenomorph Threat Level Scanner is a extraterrestrial Alexa skill designed to assist you with everyday tasks related to deep space."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Xenomorph Threat Level Scanner\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Xenomorph Threat Level Scanner-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

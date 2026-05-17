@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Test your knowledge of deep space with extraterrestrial trivia questions. Challenge yourself on lore, facts, and memorable moments from deep space.",
+          "examplePhrases": [
+            "Alexa, open Alien vs Predator Trivia Challenge",
+            "start trivia",
+            "quiz me"
+          ],
+          "name": "Alien vs Predator Trivia Challenge",
+          "description": "Test your knowledge of deep space with extraterrestrial trivia questions. Challenge yourself on lore, facts, and memorable moments from deep space."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Alien vs Predator Trivia Challenge\" to launch. Follow the prompts to interact with the skill.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

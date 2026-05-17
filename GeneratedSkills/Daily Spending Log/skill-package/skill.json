@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "A financially savvy voice-powered utility skill. Use your voice to manage tasks, track information, and stay organized hands-free.",
+          "examplePhrases": [
+            "Alexa, open Daily Spending Log",
+            "what can you do",
+            "start"
+          ],
+          "name": "Daily Spending Log",
+          "description": "A financially savvy voice-powered utility skill. Use your voice to manage tasks, track information, and stay organized hands-free."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Daily Spending Log\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Daily Spending Log-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "customized": true,
+  "category": "trivia",
+  "builtAt": "2026-05-04T03:43:13.191Z",
+  "rootib": "RootIB: RB-20260511150354-6AA8F0EF",
+  "generated": true,
+  "published": false,
+  "agentSession": {
+    "provider": "local-session",
+    "mode": "local-fallback",
+    "status": "started",
+    "startedAt": "2026-05-11T23:26:55.576Z",
+    "updatedAt": "2026-05-11T23:26:55.576Z",
+    "promptFile": "agent-session.md",
+    "placeholderSignals": []
+  },
+  "functionalCodeReady": true,
+  "deploymentReady": true,
+  "preDeployChecks": {
+    "ranAt": "2026-05-11T23:27:56Z",
+    "passed": true,
+    "errors": []
+  },
+  "deployed": false,
+  "lastDeployResult": "failed",
+  "lastDeployAt": "2026-05-11T23:28:00Z"
+}

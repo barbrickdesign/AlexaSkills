@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Identify any pokemon entity, creature, or specimen from Pokémon world. Describe what you've encountered and get an instant pocket-monster classification.",
+          "examplePhrases": [
+            "Alexa, open PokÃ©mon Type Matchup Oracle",
+            "identify something",
+            "classify this"
+          ],
+          "name": "PokÃ©mon Type Matchup Oracle",
+          "description": "Identify any pokemon entity, creature, or specimen from Pokémon world. Describe what you've encountered and get an instant pocket-monster classification."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open PokÃ©mon Type Matchup Oracle\" to launch. Follow the prompts to interact with the skill.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-PokÃ©mon Type Matchup Oracle-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

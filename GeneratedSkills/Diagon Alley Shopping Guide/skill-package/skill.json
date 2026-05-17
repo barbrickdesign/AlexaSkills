@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Your essential magical guide to Wizarding World. Get expert tips, strategies, and advice to help you navigate Wizarding World with confidence.",
+          "examplePhrases": [
+            "Alexa, open Diagon Alley Shopping Guide",
+            "give me advice",
+            "guide me"
+          ],
+          "name": "Diagon Alley Shopping Guide",
+          "description": "Your essential magical guide to Wizarding World. Get expert tips, strategies, and advice to help you navigate Wizarding World with confidence."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Diagon Alley Shopping Guide\" to launch. Follow the prompts to interact with the skill.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Diagon Alley Shopping Guide-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

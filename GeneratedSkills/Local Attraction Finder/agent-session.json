@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-CE383A43",
+  "skillName": "Local Attraction Finder",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Local Attraction Finder",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.691Z",
+  "updatedAt": "2026-05-11T16:06:43.691Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

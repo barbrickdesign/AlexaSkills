@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-D7A2882D",
+  "skillName": "Meeting Prep Coach",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Meeting Prep Coach",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.702Z",
+  "updatedAt": "2026-05-11T16:06:43.702Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

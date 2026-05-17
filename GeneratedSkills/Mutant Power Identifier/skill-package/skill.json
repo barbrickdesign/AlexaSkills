@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Identify any marvel entity, creature, or specimen from Marvel universe. Describe what you've encountered and get an instant heroic classification.",
+          "examplePhrases": [
+            "Alexa, open Mutant Power Identifier",
+            "identify something",
+            "classify this"
+          ],
+          "name": "Mutant Power Identifier",
+          "description": "Identify any marvel entity, creature, or specimen from Marvel universe. Describe what you've encountered and get an instant heroic classification."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Mutant Power Identifier\" to launch. Follow the prompts to interact with the skill.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Mutant Power Identifier-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

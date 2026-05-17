@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-64B44434",
+  "skillName": "Pet Sitter Instructions Skill",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Pet Sitter Instructions Skill",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.748Z",
+  "updatedAt": "2026-05-11T16:06:43.748Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Start each day with a fresh kung-fu quote and inspiration from the Valley of Peace. Let the wisdom of the Valley of Peace guide and motivate you.",
+          "examplePhrases": [
+            "Alexa, open There Are No Accidents Daily Quote",
+            "give me a quote",
+            "inspire me"
+          ],
+          "name": "There Are No Accidents Daily Quote",
+          "description": "Start each day with a fresh kung-fu quote and inspiration from the Valley of Peace. Let the wisdom of the Valley of Peace guide and motivate you."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open There Are No Accidents Daily Quote\" to launch. Follow the prompts to interact with the skill.",
+      "category": "LIFESTYLE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-There Are No Accidents Daily Quote-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

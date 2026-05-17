@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Start each day with a fresh versatile quote and inspiration from your world. Let the wisdom of your world guide and motivate you.",
+          "examplePhrases": [
+            "Alexa, open Apes Together Strong Daily Quote",
+            "give me a quote",
+            "inspire me"
+          ],
+          "name": "Apes Together Strong Daily Quote",
+          "description": "Start each day with a fresh versatile quote and inspiration from your world. Let the wisdom of your world guide and motivate you."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Apes Together Strong Daily Quote\" to launch. Follow the prompts to interact with the skill.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

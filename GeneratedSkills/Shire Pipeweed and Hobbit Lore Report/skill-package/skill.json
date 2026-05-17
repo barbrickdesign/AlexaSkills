@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Shire Pipeweed and Hobbit Lore Report is a epic Alexa skill designed to assist you with everyday tasks related to fantasy realm.",
+          "examplePhrases": [
+            "Alexa, open Shire Pipeweed and Hobbit Lore Report",
+            "help",
+            "start"
+          ],
+          "name": "Shire Pipeweed and Hobbit Lore Report",
+          "description": "Shire Pipeweed and Hobbit Lore Report is a epic Alexa skill designed to assist you with everyday tasks related to fantasy realm."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Shire Pipeweed and Hobbit Lore Report\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Shire Pipeweed and Hobbit Lore Report-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Your essential pet-friendly guide to the animal kingdom. Get expert tips, strategies, and advice to help you navigate the animal kingdom with confidence.",
+          "examplePhrases": [
+            "Alexa, open Dog Training Coach",
+            "give me advice",
+            "guide me"
+          ],
+          "name": "Dog Training Coach",
+          "description": "Your essential pet-friendly guide to the animal kingdom. Get expert tips, strategies, and advice to help you navigate the animal kingdom with confidence."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Dog Training Coach\" to launch. Follow the prompts to interact with the skill.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Dog Training Coach-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

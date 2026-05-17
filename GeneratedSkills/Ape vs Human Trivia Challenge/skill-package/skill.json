@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Test your knowledge of the Ape Nation with evolved-ape trivia questions. Challenge yourself on lore, facts, and memorable moments from the Ape Nation.",
+          "examplePhrases": [
+            "Alexa, open Ape vs Human Trivia Challenge",
+            "start trivia",
+            "quiz me"
+          ],
+          "name": "Ape vs Human Trivia Challenge",
+          "description": "Test your knowledge of the Ape Nation with evolved-ape trivia questions. Challenge yourself on lore, facts, and memorable moments from the Ape Nation."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Ape vs Human Trivia Challenge\" to launch. Follow the prompts to interact with the skill.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

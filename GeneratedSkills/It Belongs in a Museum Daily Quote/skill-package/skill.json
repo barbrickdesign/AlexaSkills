@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Start each day with a fresh adventurous quote and inspiration from ancient ruins. Let the wisdom of ancient ruins guide and motivate you.",
+          "examplePhrases": [
+            "Alexa, open It Belongs in a Museum Daily Quote",
+            "give me a quote",
+            "inspire me"
+          ],
+          "name": "It Belongs in a Museum Daily Quote",
+          "description": "Start each day with a fresh adventurous quote and inspiration from ancient ruins. Let the wisdom of ancient ruins guide and motivate you."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open It Belongs in a Museum Daily Quote\" to launch. Follow the prompts to interact with the skill.",
+      "category": "LIFESTYLE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-It Belongs in a Museum Daily Quote-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

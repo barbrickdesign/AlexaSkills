@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Receive simulated prophecies and guidance from the oracle of the Matrix. Ask your questions and discover what the forces of the Matrix reveal about your path.",
+          "examplePhrases": [
+            "Alexa, open Red Pill or Blue Pill Daily Decision",
+            "reveal",
+            "give me a prophecy"
+          ],
+          "name": "Red Pill or Blue Pill Daily Decision",
+          "description": "Receive simulated prophecies and guidance from the oracle of the Matrix. Ask your questions and discover what the forces of the Matrix reveal about your path."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Red Pill or Blue Pill Daily Decision\" to launch. Follow the prompts to interact with the skill.",
+      "category": "LIFESTYLE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Red Pill or Blue Pill Daily Decision-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

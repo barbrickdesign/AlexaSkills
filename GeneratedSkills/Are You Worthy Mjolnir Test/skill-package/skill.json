@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Are You Worthy Mjolnir Test is a versatile Alexa skill designed to assist you with everyday tasks related to your world.",
+          "examplePhrases": [
+            "Alexa, open Are You Worthy Mjolnir Test",
+            "help",
+            "start"
+          ],
+          "name": "Are You Worthy Mjolnir Test",
+          "description": "Are You Worthy Mjolnir Test is a versatile Alexa skill designed to assist you with everyday tasks related to your world."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Are You Worthy Mjolnir Test\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Are You Worthy Mjolnir Test-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

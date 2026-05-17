@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Caesar's Wisdom Daily is a evolved-ape Alexa skill designed to assist you with everyday tasks related to the Ape Nation.",
+          "examplePhrases": [
+            "Alexa, open Caesar's Wisdom Daily",
+            "help",
+            "start"
+          ],
+          "name": "Caesar's Wisdom Daily",
+          "description": "Caesar's Wisdom Daily is a evolved-ape Alexa skill designed to assist you with everyday tasks related to the Ape Nation."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Caesar's Wisdom Daily\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Caesar's Wisdom Daily-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

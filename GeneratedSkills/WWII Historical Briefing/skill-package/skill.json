@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Stay informed with tactical briefings and status updates from the battlefield. Get the latest news, reports, and important information delivered by voice.",
+          "examplePhrases": [
+            "Alexa, open WWII Historical Briefing",
+            "start briefing",
+            "status report"
+          ],
+          "name": "WWII Historical Briefing",
+          "description": "Stay informed with tactical briefings and status updates from the battlefield. Get the latest news, reports, and important information delivered by voice."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open WWII Historical Briefing\" to launch. Follow the prompts to interact with the skill.",
+      "category": "NEWS",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-WWII Historical Briefing-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

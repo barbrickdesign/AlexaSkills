@@ -1,0 +1,27 @@
+{
+  "customized": true,
+  "category": "character",
+  "builtAt": "2026-05-04T03:43:13.183Z",
+  "rootib": "RootIB: RB-20260511150354-610DC6E2",
+  "generated": true,
+  "published": false,
+  "agentSession": {
+    "provider": "local-session",
+    "mode": "local-fallback",
+    "status": "started",
+    "startedAt": "2026-05-11T23:26:55.55Z",
+    "updatedAt": "2026-05-11T23:26:55.55Z",
+    "promptFile": "agent-session.md",
+    "placeholderSignals": []
+  },
+  "functionalCodeReady": true,
+  "deploymentReady": true,
+  "preDeployChecks": {
+    "ranAt": "2026-05-11T23:27:02Z",
+    "passed": true,
+    "errors": []
+  },
+  "deployed": false,
+  "lastDeployResult": "failed",
+  "lastDeployAt": "2026-05-11T23:27:07Z"
+}

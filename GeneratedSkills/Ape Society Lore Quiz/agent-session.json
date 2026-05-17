@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511150354-A91E5508",
+  "skillName": "Ape Society Lore Quiz",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Ape Society Lore Quiz",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T23:26:55.574Z",
+  "updatedAt": "2026-05-11T23:26:55.574Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

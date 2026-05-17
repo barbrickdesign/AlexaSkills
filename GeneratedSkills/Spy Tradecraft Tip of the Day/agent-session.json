@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-21269D6B",
+  "skillName": "Spy Tradecraft Tip of the Day",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Spy Tradecraft Tip of the Day",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.784Z",
+  "updatedAt": "2026-05-11T16:06:43.784Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

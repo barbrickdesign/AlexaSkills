@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Your essential scientific guide to the lab. Get expert tips, strategies, and advice to help you navigate the lab with confidence.",
+          "examplePhrases": [
+            "Alexa, open Chemistry Tutor",
+            "give me advice",
+            "guide me"
+          ],
+          "name": "Chemistry Tutor",
+          "description": "Your essential scientific guide to the lab. Get expert tips, strategies, and advice to help you navigate the lab with confidence."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Chemistry Tutor\" to launch. Follow the prompts to interact with the skill.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Chemistry Tutor-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

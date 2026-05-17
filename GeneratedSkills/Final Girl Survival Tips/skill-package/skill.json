@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Your essential terrifying guide to the horror realm. Get expert tips, strategies, and advice to help you navigate the horror realm with confidence.",
+          "examplePhrases": [
+            "Alexa, open Final Girl Survival Tips",
+            "give me advice",
+            "guide me"
+          ],
+          "name": "Final Girl Survival Tips",
+          "description": "Your essential terrifying guide to the horror realm. Get expert tips, strategies, and advice to help you navigate the horror realm with confidence."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Final Girl Survival Tips\" to launch. Follow the prompts to interact with the skill.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Final Girl Survival Tips-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

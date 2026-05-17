@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511150354-8839E977",
+  "skillName": "Appointment Companion",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Appointment Companion",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T23:26:55.579Z",
+  "updatedAt": "2026-05-11T23:26:55.579Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

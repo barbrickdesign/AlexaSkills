@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Interact with the voices and wisdom of the Matrix. Get simulated quotes, character lines, and memorable dialogue delivered straight to your Alexa device.",
+          "examplePhrases": [
+            "Alexa, open Agent Smith Quote Machine",
+            "speak",
+            "give me a line"
+          ],
+          "name": "Agent Smith Quote Machine",
+          "description": "Interact with the voices and wisdom of the Matrix. Get simulated quotes, character lines, and memorable dialogue delivered straight to your Alexa device."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Agent Smith Quote Machine\" to launch. Follow the prompts to interact with the skill.",
+      "category": "NOVELTY_AND_HUMOR",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

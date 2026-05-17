@@ -1,0 +1,38 @@
+{
+  "askcliStatesVersion": "2020-03-31",
+  "profiles": {
+    "default": {
+      "skillInfrastructure": {
+        "@ask-cli/lambda-deployer": {
+          "deployState": {
+            "default": {
+              "lambda": {
+                "arn": "arn:aws:lambda:us-east-1:253879783704:function:ask-r2d2-default-default-1777789576120",
+                "lastModified": "2026-05-03T06:26:26.205+0000",
+                "revisionId": "56a64496-a031-438b-8bb1-b425dac0f9c2"
+              },
+              "iamRole": "arn:aws:iam::253879783704:role/ask-lambda-R2D2-1777789575624"
+            }
+          }
+        }
+      },
+      "deploymentStatus": "COMPLETE",
+      "skillMetadata": {
+        "lastImportId": "amzn1.ask-package.import.ea0d2651-fa7b-4310-a5c8-d78aaca70ffe",
+        "lastImportTimestamp": "2026-05-03T05:36:01.667Z",
+        "lastDeployHash": "F08f56v4FsfJn4PzqgZld0Q8gAQ=",
+        "lastDeployType": "interaction-model"
+      },
+      "skillId": "amzn1.ask.skill.9fdc7f92-1929-4760-8ffd-8da12f910b60",
+      "code": {
+        "default": {
+          "lastDeployHash": "h8Web24gIYs6Kb/ikLMycGJ+wHo="
+        },
+        "lastDeployTimestamp": "2026-05-03T06:26:33.419Z"
+      }
+    },
+    "ask_cli_default": {
+      "deploymentStatus": "IN_PROGRESS"
+    }
+  }
+}

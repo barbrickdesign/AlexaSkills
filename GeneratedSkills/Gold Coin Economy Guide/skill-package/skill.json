@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Your essential versatile guide to your world. Get expert tips, strategies, and advice to help you navigate your world with confidence.",
+          "examplePhrases": [
+            "Alexa, open Gold Coin Economy Guide",
+            "give me advice",
+            "guide me"
+          ],
+          "name": "Gold Coin Economy Guide",
+          "description": "Your essential versatile guide to your world. Get expert tips, strategies, and advice to help you navigate your world with confidence."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Gold Coin Economy Guide\" to launch. Follow the prompts to interact with the skill.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Gold Coin Economy Guide-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

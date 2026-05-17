@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-27AC29A4",
+  "skillName": "Voice Task Automator",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Voice Task Automator",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.816Z",
+  "updatedAt": "2026-05-11T16:06:43.816Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

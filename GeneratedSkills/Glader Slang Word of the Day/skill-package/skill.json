@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Interact with the voices and wisdom of the Maze. Get maze-running quotes, character lines, and memorable dialogue delivered straight to your Alexa device.",
+          "examplePhrases": [
+            "Alexa, open Glader Slang Word of the Day",
+            "speak",
+            "give me a line"
+          ],
+          "name": "Glader Slang Word of the Day",
+          "description": "Interact with the voices and wisdom of the Maze. Get maze-running quotes, character lines, and memorable dialogue delivered straight to your Alexa device."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Glader Slang Word of the Day\" to launch. Follow the prompts to interact with the skill.",
+      "category": "ENTERTAINMENT",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Glader Slang Word of the Day-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

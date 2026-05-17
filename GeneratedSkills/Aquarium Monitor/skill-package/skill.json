@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "A pet-friendly voice-powered utility skill. Use your voice to manage tasks, track information, and stay organized hands-free.",
+          "examplePhrases": [
+            "Alexa, open Aquarium Monitor",
+            "what can you do",
+            "start"
+          ],
+          "name": "Aquarium Monitor",
+          "description": "A pet-friendly voice-powered utility skill. Use your voice to manage tasks, track information, and stay organized hands-free."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Aquarium Monitor\" to launch. Follow the prompts to interact with the skill.",
+      "category": "PRODUCTIVITY",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

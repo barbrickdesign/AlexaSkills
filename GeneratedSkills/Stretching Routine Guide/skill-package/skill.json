@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Your essential fitness-focused guide to the gym. Get expert tips, strategies, and advice to help you navigate the gym with confidence.",
+          "examplePhrases": [
+            "Alexa, open Stretching Routine Guide",
+            "give me advice",
+            "guide me"
+          ],
+          "name": "Stretching Routine Guide",
+          "description": "Your essential fitness-focused guide to the gym. Get expert tips, strategies, and advice to help you navigate the gym with confidence."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Stretching Routine Guide\" to launch. Follow the prompts to interact with the skill.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Stretching Routine Guide-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

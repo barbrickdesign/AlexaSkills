@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-6C4438C2",
+  "skillName": "Customer Follow-Up Coach",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Customer Follow-Up Coach",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.619Z",
+  "updatedAt": "2026-05-11T16:06:43.619Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

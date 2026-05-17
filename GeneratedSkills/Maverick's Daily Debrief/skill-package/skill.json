@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Start each day with a fresh top-secret quote and inspiration from intelligence world. Let the wisdom of intelligence world guide and motivate you.",
+          "examplePhrases": [
+            "Alexa, open Maverick's Daily Debrief",
+            "give me a quote",
+            "inspire me"
+          ],
+          "name": "Maverick's Daily Debrief",
+          "description": "Start each day with a fresh top-secret quote and inspiration from intelligence world. Let the wisdom of intelligence world guide and motivate you."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Maverick's Daily Debrief\" to launch. Follow the prompts to interact with the skill.",
+      "category": "LIFESTYLE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Maverick's Daily Debrief-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

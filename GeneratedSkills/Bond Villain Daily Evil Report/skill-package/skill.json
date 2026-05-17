@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Bond Villain Daily Evil Report is a top-secret Alexa skill designed to assist you with everyday tasks related to intelligence world.",
+          "examplePhrases": [
+            "Alexa, open Bond Villain Daily Evil Report",
+            "help",
+            "start"
+          ],
+          "name": "Bond Villain Daily Evil Report",
+          "description": "Bond Villain Daily Evil Report is a top-secret Alexa skill designed to assist you with everyday tasks related to intelligence world."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Bond Villain Daily Evil Report\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Bond Villain Daily Evil Report-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Your essential evolved-ape guide to the Ape Nation. Get expert tips, strategies, and advice to help you navigate the Ape Nation with confidence.",
+          "examplePhrases": [
+            "Alexa, open Emergency Escape Route Planner",
+            "give me advice",
+            "guide me"
+          ],
+          "name": "Emergency Escape Route Planner",
+          "description": "Your essential evolved-ape guide to the Ape Nation. Get expert tips, strategies, and advice to help you navigate the Ape Nation with confidence."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Emergency Escape Route Planner\" to launch. Follow the prompts to interact with the skill.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Emergency Escape Route Planner-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

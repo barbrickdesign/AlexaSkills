@@ -1,0 +1,12 @@
+{
+  "askcliStatesVersion": "2020-03-31",
+  "profiles": {
+    "default": {
+      "deploymentStatus": "COMPLETE",
+      "skillMetadata": {
+        "lastImportId": "amzn1.ask-package.import.f098963c-94f3-4744-8af7-d88512c4bc7c",
+        "lastImportTimestamp": "2026-05-11T23:27:33.897Z"
+      }
+    }
+  }
+}

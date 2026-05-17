@@ -1,0 +1,27 @@
+{
+  "customized": true,
+  "category": "voice-utility",
+  "builtAt": "2026-05-04T03:43:13.193Z",
+  "rootib": "RootIB: RB-20260511150354-5AF03A15",
+  "generated": true,
+  "published": false,
+  "agentSession": {
+    "provider": "local-session",
+    "mode": "local-fallback",
+    "status": "started",
+    "startedAt": "2026-05-11T23:26:55.583Z",
+    "updatedAt": "2026-05-11T23:26:55.583Z",
+    "promptFile": "agent-session.md",
+    "placeholderSignals": []
+  },
+  "functionalCodeReady": true,
+  "deploymentReady": true,
+  "preDeployChecks": {
+    "ranAt": "2026-05-11T23:28:13Z",
+    "passed": true,
+    "errors": []
+  },
+  "deployed": false,
+  "lastDeployResult": "failed",
+  "lastDeployAt": "2026-05-11T23:28:18Z"
+}

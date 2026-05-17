@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Your essential district guide to Panem. Get expert tips, strategies, and advice to help you navigate Panem with confidence.",
+          "examplePhrases": [
+            "Alexa, open Capitol Fashion Advisor",
+            "give me advice",
+            "guide me"
+          ],
+          "name": "Capitol Fashion Advisor",
+          "description": "Your essential district guide to Panem. Get expert tips, strategies, and advice to help you navigate Panem with confidence."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Capitol Fashion Advisor\" to launch. Follow the prompts to interact with the skill.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Capitol Fashion Advisor-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

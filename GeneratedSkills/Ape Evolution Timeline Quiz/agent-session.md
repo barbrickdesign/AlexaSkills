@@ -1,0 +1,158 @@
+RootIB: RB-20260511150354-B1BE2F30
+
+TASK: Generate complete, functional Alexa skill code for this GeneratedSkills entry before deployment.
+
+INPUT:
+- Skill name: Ape Evolution Timeline Quiz
+- Invocation: ape evolution timeline quiz
+- Category: trivia
+- Description: Test your knowledge of the Ape Nation with evolved-ape trivia questions. Challenge yourself on lore, facts, and memorable moments from the Ape Nation.
+- Lambda handler path: /home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Ape Evolution Timeline Quiz/lambda/index.js
+- Interaction model path: /home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Ape Evolution Timeline Quiz/skill-package/interactionModels/custom/en-US.json
+
+CONSTRAINTS:
+- Replace placeholder or template behavior with complete production-ready logic.
+- Keep the skill deployable with ask deploy.
+- Preserve RootIB provenance already present in source files.
+- Use safe input handling and user-friendly Alexa responses.
+- Do not deploy until the generated code is functionally complete.
+
+OUTPUT:
+- Fully implemented lambda/index.js behavior for the skill.
+- Any interaction model updates required for the implemented intents.
+- A brief readiness summary explaining whether the skill is ready to deploy.
+
+VERIFY:
+- The handler should not contain TODO placeholders or generic intent-reflector fallback behavior.
+- The skill should provide meaningful responses for its main voice flow.
+- The skill should be ready for syntax validation and ask deploy.
+
+CURRENT_LAMBDA_EXCERPT:
+```javascript
+// RootIB: RB-20260504022302-A1B2C3D4
+'use strict';
+
+const Alexa = require('ask-sdk-core');
+
+// Ape Evolution Timeline Quiz — category: trivia, theme: planet of the apes
+
+const LaunchRequestHandler = {
+  canHandle(handlerInput) {
+    return Alexa.getRequestType(handlerInput.requestEnvelope) === 'LaunchRequest';
+  },
+  handle(handlerInput) {
+    const speakOutput = "Welcome to Ape Evolution Timeline Quiz! Test your knowledge of the Ape Nation across evolved-ape trivia challenges. Say start trivia to begin, or help for instructions.";
+    return handlerInput.responseBuilder
+      .speak(speakOutput)
+      .reprompt("Say start trivia to begin, or help for instructions.")
+      .getResponse();
+  }
+};
+
+const StartTriviaIntentHandler = {
+  canHandle(handlerInput) {
+    return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+      && Alexa.getIntentName(handlerInput.requestEnvelope) === 'StartTriviaIntent';
+  },
+  handle(handlerInput) {
+    const speakOutput = "Great! Here's your first evolved-ape trivia question from the Ape Nation: In the lore of the Ape Nation, what is often considered the most powerful symbol of strength and courage? Take your best guess!";
+    return handlerInput.responseBuilder
+      .speak(speakOutput)
+      .reprompt("Say start trivia to begin, or help for instructions.")
+      .getResponse();
+  }
+};
+
+const HelpIntentHandler = {
+  canHandle(handlerInput) {
+    return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+      && Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.HelpIntent';
+  },
+  handle(handlerInput) {
+    const speakOutput = "Ape Evolution Timeline Quiz tests your knowledge of the Ape Nation. Say start trivia to get evolved-ape questions and track your score.";
+    return handlerInput.responseBuilder
+      .speak(speakOutput)
+      .reprompt("Say start trivia to begin, or help for instructions.")
+      .getResponse();
+  }
+};
+
+const CancelAndStopIntentHandler = {
+  canHandle(handlerInput) {
+    return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+      && (Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.CancelIntent'
+        || Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.StopIntent');
+  },
+  handle(handlerInput) {
+    const speakOutput = "Thanks for playing Ape Evolution Timeline Quiz. Keep exploring the Ape Nation!";
+    return handlerInput.responseBuilder
+      .speak(speakOutput)
+      .getResponse();
+  }
+};
+
+const FallbackIntentHandler = {
+  canHandle(handlerInput) {
+    return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+      && Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.FallbackIntent';
+  },
+  handle(handlerInput) {
+    const speakOutput = "I didn't catch your answer. Try saying start trivia or help.";
+    return handlerInput.responseBuilder
+      .speak(speakOutput)
+      .reprompt("Say start trivia to begin, or help for instructions.")
+      .getResponse();
+  }
+};
+
+const SessionEndedRequestHandler = {
+  canHandle(handlerInput) {
+    return Alexa.getRequestType(handlerInput.requestEnvelope) === 'SessionEndedRequest';
+  },
+  handle(handlerInput) {
+    return handlerInput.responseBuilder.getResponse();
+  }
+};
+
+const UnhandledIntentHandler = {
+  canHandle(handlerInput) {
+    return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest';
+  },
+  handle(handlerInput) {
+    const intentName = Alexa.getIntentName(handlerInput.requestEnvelope);
+    const speakOutput = `I heard ${intentName}, but Ape Evolution Timeline Quiz works best with its main commands right now. Ape Evolution Timeline Quiz tests your knowledge of the Ape Nation. Say start trivia to get evolved-ape questions and track your score.`;
+    return handlerInput.responseBuilder
+      .speak(speakOutput)
+      .reprompt("Say start trivia to begin, or help for instructions.")
+      .getResponse();
+  }
+};
+
+const ErrorHandler = {
+  canHandle() {
+    return true;
+  },
+  handle(handlerInput, error) {
+    console.log(`~~~~ Error handled: ${error.stack}`);
+    const speakOutput = 'Sorry, something went wrong. Please try again.';
+    return handlerInput.responseBuilder
+      .speak(speakOutput)
+      .reprompt("Say start trivia to begin, or help for instructions.")
+      .getResponse();
+  }
+};
+
+exports.handler = Alexa.SkillBuilders.custom()
+  .addRequestHandlers(
+    LaunchRequestHandler,
+    StartTriviaIntentHandler,
+    HelpIntentHandler,
+    CancelAndStopIntentHandler,
+    FallbackIntentHandler,
+    SessionEndedRequestHandler,
+    UnhandledIntentHandler
+  )
+  .addErrorHandlers(ErrorHandler)
+  .lambda();
+
+```

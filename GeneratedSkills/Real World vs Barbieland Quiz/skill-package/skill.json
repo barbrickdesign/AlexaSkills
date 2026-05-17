@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Real World vs Barbieland Quiz is a Barbie-world Alexa skill designed to assist you with everyday tasks related to Barbieland.",
+          "examplePhrases": [
+            "Alexa, open Real World vs Barbieland Quiz",
+            "help",
+            "start"
+          ],
+          "name": "Real World vs Barbieland Quiz",
+          "description": "Real World vs Barbieland Quiz is a Barbie-world Alexa skill designed to assist you with everyday tasks related to Barbieland."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Real World vs Barbieland Quiz\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Real World vs Barbieland Quiz-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

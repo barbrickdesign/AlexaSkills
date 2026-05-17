@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "A top-secret voice-powered utility skill. Use your voice to manage tasks, track information, and stay organized hands-free.",
+          "examplePhrases": [
+            "Alexa, open IMF Agent Countdown Timer",
+            "what can you do",
+            "start"
+          ],
+          "name": "IMF Agent Countdown Timer",
+          "description": "A top-secret voice-powered utility skill. Use your voice to manage tasks, track information, and stay organized hands-free."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open IMF Agent Countdown Timer\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-IMF Agent Countdown Timer-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

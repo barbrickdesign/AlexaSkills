@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "War Boy Battle Cry Generator is a tactical Alexa skill designed to assist you with everyday tasks related to the battlefield.",
+          "examplePhrases": [
+            "Alexa, open War Boy Battle Cry Generator",
+            "help",
+            "start"
+          ],
+          "name": "War Boy Battle Cry Generator",
+          "description": "War Boy Battle Cry Generator is a tactical Alexa skill designed to assist you with everyday tasks related to the battlefield."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open War Boy Battle Cry Generator\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-War Boy Battle Cry Generator-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

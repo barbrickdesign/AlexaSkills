@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-AD5520EA",
+  "skillName": "Who's That PokÃ©mon Guessing Game",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Who's That PokÃ©mon Guessing Game",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.833Z",
+  "updatedAt": "2026-05-11T16:06:43.833Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

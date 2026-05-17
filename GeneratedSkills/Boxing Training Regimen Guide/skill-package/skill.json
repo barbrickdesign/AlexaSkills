@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Your essential champion guide to the ring. Get expert tips, strategies, and advice to help you navigate the ring with confidence.",
+          "examplePhrases": [
+            "Alexa, open Boxing Training Regimen Guide",
+            "give me advice",
+            "guide me"
+          ],
+          "name": "Boxing Training Regimen Guide",
+          "description": "Your essential champion guide to the ring. Get expert tips, strategies, and advice to help you navigate the ring with confidence."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Boxing Training Regimen Guide\" to launch. Follow the prompts to interact with the skill.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Boxing Training Regimen Guide-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

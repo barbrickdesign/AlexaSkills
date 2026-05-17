@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Test your knowledge of Wizarding World with magical trivia questions. Challenge yourself on lore, facts, and memorable moments from Wizarding World.",
+          "examplePhrases": [
+            "Alexa, open Wizarding World Trivia Challenge",
+            "start trivia",
+            "quiz me"
+          ],
+          "name": "Wizarding World Trivia Challenge",
+          "description": "Test your knowledge of Wizarding World with magical trivia questions. Challenge yourself on lore, facts, and memorable moments from Wizarding World."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Wizarding World Trivia Challenge\" to launch. Follow the prompts to interact with the skill.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Wizarding World Trivia Challenge-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-7F1320EB",
+  "skillName": "Ping Map Voice Query",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Ping Map Voice Query",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.750Z",
+  "updatedAt": "2026-05-11T16:06:43.750Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Start each day with a fresh versatile quote and inspiration from your world. Let the wisdom of your world guide and motivate you.",
+          "examplePhrases": [
+            "Alexa, open Witness Me Daily Motivation",
+            "give me a quote",
+            "inspire me"
+          ],
+          "name": "Witness Me Daily Motivation",
+          "description": "Start each day with a fresh versatile quote and inspiration from your world. Let the wisdom of your world guide and motivate you."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Witness Me Daily Motivation\" to launch. Follow the prompts to interact with the skill.",
+      "category": "LIFESTYLE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Witness Me Daily Motivation-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

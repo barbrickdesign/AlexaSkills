@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-77A915CB",
+  "skillName": "Which Spider-Person Are You",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Which Spider-Person Are You",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.831Z",
+  "updatedAt": "2026-05-11T16:06:43.831Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

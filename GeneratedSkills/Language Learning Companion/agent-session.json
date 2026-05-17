@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-5360991C",
+  "skillName": "Language Learning Companion",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Language Learning Companion",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.687Z",
+  "updatedAt": "2026-05-11T16:06:43.687Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

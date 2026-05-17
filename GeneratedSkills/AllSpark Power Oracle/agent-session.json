@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511150354-712375DF",
+  "skillName": "AllSpark Power Oracle",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/AllSpark Power Oracle",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T23:26:55.562Z",
+  "updatedAt": "2026-05-11T23:26:55.562Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

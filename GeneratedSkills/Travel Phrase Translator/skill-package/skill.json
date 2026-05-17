@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Interact with the voices and wisdom of the language lab. Get multilingual quotes, character lines, and memorable dialogue delivered straight to your Alexa devic",
+          "examplePhrases": [
+            "Alexa, open Travel Phrase Translator",
+            "speak",
+            "give me a line"
+          ],
+          "name": "Travel Phrase Translator",
+          "description": "Interact with the voices and wisdom of the language lab. Get multilingual quotes, character lines, and memorable dialogue delivered straight to your Alexa device."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Travel Phrase Translator\" to launch. Follow the prompts to interact with the skill.",
+      "category": "ENTERTAINMENT",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Travel Phrase Translator-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

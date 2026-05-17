@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Identify any dragons entity, creature, or specimen from Berk. Describe what you've encountered and get an instant dragon-riding classification.",
+          "examplePhrases": [
+            "Alexa, open Dragon Species Identifier",
+            "identify something",
+            "classify this"
+          ],
+          "name": "Dragon Species Identifier",
+          "description": "Identify any dragons entity, creature, or specimen from Berk. Describe what you've encountered and get an instant dragon-riding classification."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Dragon Species Identifier\" to launch. Follow the prompts to interact with the skill.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Dragon Species Identifier-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

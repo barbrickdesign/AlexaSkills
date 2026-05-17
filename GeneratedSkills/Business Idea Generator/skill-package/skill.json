@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Business Idea Generator is a financially savvy Alexa skill designed to assist you with everyday tasks related to the marketplace.",
+          "examplePhrases": [
+            "Alexa, open Business Idea Generator",
+            "help",
+            "start"
+          ],
+          "name": "Business Idea Generator",
+          "description": "Business Idea Generator is a financially savvy Alexa skill designed to assist you with everyday tasks related to the marketplace."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Business Idea Generator\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Business Idea Generator-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

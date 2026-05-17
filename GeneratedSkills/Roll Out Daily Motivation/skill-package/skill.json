@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Start each day with a fresh robotic quote and inspiration from Cybertron. Let the wisdom of Cybertron guide and motivate you.",
+          "examplePhrases": [
+            "Alexa, open Roll Out Daily Motivation",
+            "give me a quote",
+            "inspire me"
+          ],
+          "name": "Roll Out Daily Motivation",
+          "description": "Start each day with a fresh robotic quote and inspiration from Cybertron. Let the wisdom of Cybertron guide and motivate you."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Roll Out Daily Motivation\" to launch. Follow the prompts to interact with the skill.",
+      "category": "LIFESTYLE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Roll Out Daily Motivation-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Interact with the voices and wisdom of high school. Get totally fetch quotes, character lines, and memorable dialogue delivered straight to your Alexa device.",
+          "examplePhrases": [
+            "Alexa, open Burn Book Quote Machine",
+            "speak",
+            "give me a line"
+          ],
+          "name": "Burn Book Quote Machine",
+          "description": "Interact with the voices and wisdom of high school. Get totally fetch quotes, character lines, and memorable dialogue delivered straight to your Alexa device."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Burn Book Quote Machine\" to launch. Follow the prompts to interact with the skill.",
+      "category": "ENTERTAINMENT",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Burn Book Quote Machine-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

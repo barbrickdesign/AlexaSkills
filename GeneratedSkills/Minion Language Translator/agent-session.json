@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-AECDC314",
+  "skillName": "Minion Language Translator",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Minion Language Translator",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.715Z",
+  "updatedAt": "2026-05-11T16:06:43.715Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

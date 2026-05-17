@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-93A89B90",
+  "skillName": "Nine Realms Explorer",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Nine Realms Explorer",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.733Z",
+  "updatedAt": "2026-05-11T16:06:43.733Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

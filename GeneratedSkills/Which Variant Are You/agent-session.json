@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-6626677F",
+  "skillName": "Which Variant Are You",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Which Variant Are You",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.832Z",
+  "updatedAt": "2026-05-11T16:06:43.832Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Discover something new every day with terrifying facts about the horror realm. Expand your knowledge with fascinating insights from the horror realm.",
+          "examplePhrases": [
+            "Alexa, open Be Afraid of the Boogeyman Daily Brief",
+            "give me a fact",
+            "today's fact"
+          ],
+          "name": "Be Afraid of the Boogeyman Daily Brief",
+          "description": "Discover something new every day with terrifying facts about the horror realm. Expand your knowledge with fascinating insights from the horror realm."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Be Afraid of the Boogeyman Daily Brief\" to launch. Follow the prompts to interact with the skill.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Be Afraid of the Boogeyman Daily Brief-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

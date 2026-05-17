@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-E329EF74",
+  "skillName": "Sanctum Sanctorum Spell Guide",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Sanctum Sanctorum Spell Guide",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.770Z",
+  "updatedAt": "2026-05-11T16:06:43.770Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

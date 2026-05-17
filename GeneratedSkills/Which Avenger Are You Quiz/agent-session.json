@@ -1,0 +1,14 @@
+{
+  "rootib": "RootIB: RB-20260511160643-9B61D28F",
+  "skillName": "Which Avenger Are You Quiz",
+  "skillDir": "/home/runner/work/barbrickdesign.github.io/barbrickdesign.github.io/GeneratedSkills/Which Avenger Are You Quiz",
+  "provider": "local-session",
+  "mode": "local-fallback",
+  "status": "started",
+  "startedAt": "2026-05-11T16:06:43.828Z",
+  "updatedAt": "2026-05-11T16:06:43.828Z",
+  "promptFile": "agent-session.md",
+  "placeholderSignals": [],
+  "functionalCodeReady": true,
+  "deploymentReady": true
+}

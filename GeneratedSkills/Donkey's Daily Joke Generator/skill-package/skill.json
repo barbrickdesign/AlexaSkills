@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Start each day with a fresh ogre-sized quote and inspiration from Far Far Away. Let the wisdom of Far Far Away guide and motivate you.",
+          "examplePhrases": [
+            "Alexa, open Donkey's Daily Joke Generator",
+            "give me a quote",
+            "inspire me"
+          ],
+          "name": "Donkey's Daily Joke Generator",
+          "description": "Start each day with a fresh ogre-sized quote and inspiration from Far Far Away. Let the wisdom of Far Far Away guide and motivate you."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Donkey's Daily Joke Generator\" to launch. Follow the prompts to interact with the skill.",
+      "category": "LIFESTYLE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Donkey's Daily Joke Generator-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

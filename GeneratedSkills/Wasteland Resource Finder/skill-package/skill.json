@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Wasteland Resource Finder is a survival-ready Alexa skill designed to assist you with everyday tasks related to the wasteland.",
+          "examplePhrases": [
+            "Alexa, open Wasteland Resource Finder",
+            "help",
+            "start"
+          ],
+          "name": "Wasteland Resource Finder",
+          "description": "Wasteland Resource Finder is a survival-ready Alexa skill designed to assist you with everyday tasks related to the wasteland."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Say \"Alexa, open Wasteland Resource Finder\" to launch. Follow the prompts to interact with the skill.",
+      "category": "UTILITIES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Wasteland Resource Finder-default-default-1777789576120"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}
