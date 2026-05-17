@@ -1,5 +1,8 @@
 name: Deploy generated Alexa skills
 
+permissions:
+  contents: read
+
 on:
   workflow_dispatch:
     inputs:
@@ -69,7 +72,7 @@ jobs:
       - name: Deploy selected skills
         shell: bash
         run: |
-          set -uo pipefail
+          set -euo pipefail
 
           skills_root="$GITHUB_WORKSPACE/GeneratedSkills"
           deploy_target="${{ github.event.inputs.deploy_target }}"

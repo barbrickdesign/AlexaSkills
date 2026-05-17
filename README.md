@@ -22,6 +22,15 @@ This repository now includes a manual workflow at `/home/runner/work/AlexaSkills
 4. Choose `single` to deploy one skill or `all` to deploy every deployable folder under `/home/runner/work/AlexaSkills/AlexaSkills/GeneratedSkills`.
 5. If you choose `single`, enter the exact skill directory name, such as `007 Trivia Challenge`.
 
+### How to generate the Alexa refresh token
+
+1. Run `ask util generate-lwa-tokens`.
+2. Sign in with the Amazon developer account that owns the skills.
+3. Copy only the returned `refresh_token` value into the `ASK_REFRESH_TOKEN` GitHub secret.
+4. Do not store the short-lived `access_token` in GitHub Actions secrets.
+
+If the token output was exposed outside your local machine, revoke it and generate a new one before using this workflow.
+
 ### What the workflow does
 
 - Installs Node.js and the ASK CLI.
