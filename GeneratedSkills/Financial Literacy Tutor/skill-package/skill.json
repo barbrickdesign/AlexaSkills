@@ -3,14 +3,14 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "summary": "Your essential top-secret guide to intelligence world. Get expert tips, strategies, and advice to help you navigate intelligence world with confidence.",
+          "summary": "Your essential financially savvy guide to the marketplace. Get expert tips, strategies, and advice to help you navigate the marketplace with confidence.",
           "examplePhrases": [
             "Alexa, open Financial Literacy Tutor",
             "give me advice",
             "guide me"
           ],
           "name": "Financial Literacy Tutor",
-          "description": "Your essential top-secret guide to intelligence world. Get expert tips, strategies, and advice to help you navigate intelligence world with confidence."
+          "description": "Your essential financially savvy guide to the marketplace. Get expert tips, strategies, and advice to help you navigate the marketplace with confidence."
         }
       },
       "isAvailableWorldwide": true,
@@ -21,7 +21,7 @@
     "apis": {
       "custom": {
         "endpoint": {
-          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-Financial Literacy Tutor-default-default-1777789576120"
+          "sourceDir": "lambda"
         }
       }
     },

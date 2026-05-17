@@ -21,7 +21,7 @@
     "apis": {
       "custom": {
         "endpoint": {
-          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-T-800 vs T-1000 vs T-X Lore Quiz-default-default-1777789576120"
+          "sourceDir": "lambda"
         }
       }
     },

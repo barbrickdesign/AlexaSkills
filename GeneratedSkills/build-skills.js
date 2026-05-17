@@ -598,7 +598,7 @@ function buildSkillJson(skillName, category, theme, alexaCategory) {
       apis: {
         custom: {
           endpoint: {
-            uri: `arn:aws:lambda:us-east-1:253879783704:function:ask-${skillName}-default-default-1777789576120`
+            sourceDir: 'lambda'
           }
         }
       },

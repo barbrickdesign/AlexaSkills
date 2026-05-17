@@ -21,7 +21,7 @@
     "apis": {
       "custom": {
         "endpoint": {
-          "uri": "arn:aws:lambda:us-east-1:253879783704:function:ask-PokÃ©dex Voice Lookup-default-default-1777789576120"
+          "sourceDir": "lambda"
         }
       }
     },

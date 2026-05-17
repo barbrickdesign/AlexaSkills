@@ -3,14 +3,14 @@
 
 const Alexa = require('ask-sdk-core');
 
-// Daily Appreciation Prompts — category: utility, theme: espionage
+// Daily Appreciation Prompts — category: utility, theme: general
 
 const LaunchRequestHandler = {
   canHandle(handlerInput) {
     return Alexa.getRequestType(handlerInput.requestEnvelope) === 'LaunchRequest';
   },
   handle(handlerInput) {
-    const speakOutput = "Daily Appreciation Prompts is ready. This top-secret skill is here to assist you. Say help for options, or tell me what you need.";
+    const speakOutput = "Daily Appreciation Prompts is ready. This versatile skill is here to assist you. Say help for options, or tell me what you need.";
     return handlerInput.responseBuilder
       .speak(speakOutput)
       .reprompt("Tell me what you need or say help for options.")
@@ -24,7 +24,7 @@ const ActionIntentHandler = {
       && Alexa.getIntentName(handlerInput.requestEnvelope) === 'ActionIntent';
   },
   handle(handlerInput) {
-    const speakOutput = "Daily Appreciation Prompts is here and top-secret. How can I assist you today? I can help with a variety of tasks related to intelligence world. Just let me know what you need.";
+    const speakOutput = "Daily Appreciation Prompts is here and versatile. How can I assist you today? I can help with a variety of tasks related to your world. Just let me know what you need.";
     return handlerInput.responseBuilder
       .speak(speakOutput)
       .reprompt("Tell me what you need or say help for options.")
@@ -38,7 +38,7 @@ const HelpIntentHandler = {
       && Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.HelpIntent';
   },
   handle(handlerInput) {
-    const speakOutput = "Daily Appreciation Prompts is a top-secret Alexa skill. You can ask for help, start a task, or explore what this skill offers. Say go to begin.";
+    const speakOutput = "Daily Appreciation Prompts is a versatile Alexa skill. You can ask for help, start a task, or explore what this skill offers. Say go to begin.";
     return handlerInput.responseBuilder
       .speak(speakOutput)
       .reprompt("Tell me what you need or say help for options.")
@@ -53,7 +53,7 @@ const CancelAndStopIntentHandler = {
         || Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.StopIntent');
   },
   handle(handlerInput) {
-    const speakOutput = "Goodbye! Come back anytime you need top-secret assistance.";
+    const speakOutput = "Goodbye! Come back anytime you need versatile assistance.";
     return handlerInput.responseBuilder
       .speak(speakOutput)
       .getResponse();
@@ -89,7 +89,7 @@ const UnhandledIntentHandler = {
   },
   handle(handlerInput) {
     const intentName = Alexa.getIntentName(handlerInput.requestEnvelope);
-    const speakOutput = `I heard ${intentName}, but Daily Appreciation Prompts works best with its main commands right now. Daily Appreciation Prompts is a top-secret Alexa skill. You can ask for help, start a task, or explore what this skill offers. Say go to begin.`;
+    const speakOutput = `I heard ${intentName}, but Daily Appreciation Prompts works best with its main commands right now. Daily Appreciation Prompts is a versatile Alexa skill. You can ask for help, start a task, or explore what this skill offers. Say go to begin.`;
     return handlerInput.responseBuilder
       .speak(speakOutput)
       .reprompt("Tell me what you need or say help for options.")
