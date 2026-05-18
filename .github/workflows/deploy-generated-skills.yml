@@ -69,6 +69,35 @@ jobs:
             exit 1
           fi
 
+      - name: Initialize ASK CLI profile
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.ask
+          cat <<EOF > ~/.ask/cli_config
+          {
+            "profiles": {
+              "default": {
+                "clientId": "${ASK_CLIENT_ID}",
+                "clientSecret": "${ASK_CLIENT_SECRET}",
+                "refreshToken": "${ASK_REFRESH_TOKEN}",
+                "awsProfile": "default"
+              }
+            }
+          }
+          EOF
+
+      - name: Configure AWS credentials
+        shell: bash
+        run: |
+          set -euo pipefail
+          aws configure set aws_access_key_id "$AWS_ACCESS_KEY_ID"
+          aws configure set aws_secret_access_key "$AWS_SECRET_ACCESS_KEY"
+          aws configure set region "us-east-1"
+          if [ -n "${AWS_SESSION_TOKEN:-}" ]; then
+            aws configure set aws_session_token "$AWS_SESSION_TOKEN"
+          fi
+
       - name: Deploy selected skills
         shell: bash
         run: |
