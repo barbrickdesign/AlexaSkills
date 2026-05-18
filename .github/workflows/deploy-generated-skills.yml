@@ -23,9 +23,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      ASK_CLIENT_ID: ${{ secrets.ASK_CLIENT_ID }}
-      ASK_CLIENT_SECRET: ${{ secrets.ASK_CLIENT_SECRET }}
       ASK_REFRESH_TOKEN: ${{ secrets.ASK_REFRESH_TOKEN }}
+      # ask-cli v2 reads LWA client credentials from these specific env var names
+      ASK_LWA_CLIENT_ID: ${{ secrets.ASK_CLIENT_ID }}
+      ASK_LWA_CLIENT_CONFIRMATION: ${{ secrets.ASK_CLIENT_SECRET }}
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       AWS_SESSION_TOKEN: ${{ secrets.AWS_SESSION_TOKEN }}
@@ -51,8 +52,8 @@ jobs:
 
           missing=()
           required_vars=(
-            ASK_CLIENT_ID
-            ASK_CLIENT_SECRET
+            ASK_LWA_CLIENT_ID
+            ASK_LWA_CLIENT_CONFIRMATION
             ASK_REFRESH_TOKEN
             AWS_ACCESS_KEY_ID
             AWS_SECRET_ACCESS_KEY
@@ -79,13 +80,21 @@ jobs:
           import os
           from pathlib import Path
 
+          # ask-cli v2 requires the token nested under "token" with snake_case keys.
+          # expires_at is set in the past so the CLI immediately refreshes using the
+          # refresh_token (requires ASK_LWA_CLIENT_ID / ASK_LWA_CLIENT_CONFIRMATION).
           config = {
               "profiles": {
                   "default": {
-                      "clientId": os.environ["ASK_CLIENT_ID"],
-                      "clientSecret": os.environ["ASK_CLIENT_SECRET"],
-                      "refreshToken": os.environ["ASK_REFRESH_TOKEN"],
-                      "awsProfile": "default",
+                      "token": {
+                          "access_token": None,
+                          "refresh_token": os.environ["ASK_REFRESH_TOKEN"],
+                          "token_type": "bearer",
+                          "expires_in": 3600,
+                          "expires_at": "2019-01-01T00:00:00.000Z",
+                      },
+                      "vendor_id": os.environ.get("ASK_VENDOR_ID", ""),
+                      "aws_profile": "default",
                   }
               }
           }
