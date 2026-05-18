@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "captains log voice journal",
+      "invocationName": "captain's log voice journal",
       "intents": [
         {
           "name": "BriefingIntent",

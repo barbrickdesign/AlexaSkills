@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "captain sparrows compass wisdom",
+      "invocationName": "captain sparrow's compass wisdom",
       "intents": [
         {
           "name": "ActionIntent",

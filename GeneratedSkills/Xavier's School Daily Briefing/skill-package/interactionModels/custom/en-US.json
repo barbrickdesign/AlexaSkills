@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "xaviers school daily briefing",
+      "invocationName": "xavier's school daily briefing",
       "intents": [
         {
           "name": "FactIntent",

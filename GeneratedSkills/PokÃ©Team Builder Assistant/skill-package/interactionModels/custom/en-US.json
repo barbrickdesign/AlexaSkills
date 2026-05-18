@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "poketeam builder assistant",
+      "invocationName": "pok team builder assistant",
       "intents": [
         {
           "name": "AdviceIntent",

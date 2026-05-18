@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "caesars wisdom daily",
+      "invocationName": "caesar's wisdom daily",
       "intents": [
         {
           "name": "ActionIntent",

@@ -15,7 +15,7 @@
       },
       "isAvailableWorldwide": true,
       "testingInstructions": "Say \"Alexa, open Airport Delay Checker\" to launch. Follow the prompts to interact with the skill.",
-      "category": "PRODUCTIVITY",
+      "category": "UTILITIES",
       "distributionCountries": []
     },
     "apis": {

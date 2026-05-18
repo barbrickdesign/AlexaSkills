@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "gastons daily terrible advice",
+      "invocationName": "gaston's daily terrible advice",
       "intents": [
         {
           "name": "QuoteIntent",

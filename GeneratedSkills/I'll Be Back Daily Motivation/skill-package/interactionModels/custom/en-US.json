@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "ill be back daily motivation",
+      "invocationName": "i'll be back daily motivation",
       "intents": [
         {
           "name": "QuoteIntent",

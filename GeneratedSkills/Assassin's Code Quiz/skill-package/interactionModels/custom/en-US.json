@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "assassins code quiz",
+      "invocationName": "assassin's code quiz",
       "intents": [
         {
           "name": "ActionIntent",

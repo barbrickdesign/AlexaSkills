@@ -15,7 +15,7 @@
       },
       "isAvailableWorldwide": true,
       "testingInstructions": "Say \"Alexa, open Elvish Word of the Day\" to launch. Follow the prompts to interact with the skill.",
-      "category": "ENTERTAINMENT",
+      "category": "NOVELTY",
       "distributionCountries": []
     },
     "apis": {

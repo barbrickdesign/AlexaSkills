@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "biff tannens almanac game",
+      "invocationName": "biff tannen's almanac game",
       "intents": [
         {
           "name": "StartGameIntent",

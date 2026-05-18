@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "imperators daily orders",
+      "invocationName": "imperator's daily orders",
       "intents": [
         {
           "name": "BriefingIntent",

@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "pokemon go raid counter",
+      "invocationName": "pok mon go raid counter",
       "intents": [
         {
           "name": "ActionIntent",

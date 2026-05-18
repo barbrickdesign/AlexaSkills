@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "simbas growth journey game",
+      "invocationName": "simba's growth journey game",
       "intents": [
         {
           "name": "StartGameIntent",

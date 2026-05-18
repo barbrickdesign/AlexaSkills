@@ -13,7 +13,7 @@ This repository now includes a manual workflow at `/home/runner/work/AlexaSkills
 - `AWS_ACCESS_KEY_ID`
 - `AWS_SECRET_ACCESS_KEY`
 - `AWS_SESSION_TOKEN` (optional when using temporary AWS credentials)
-- `SHARED_LAMBDA_ARN` (required when generated manifests use `endpoint.sourceDir` instead of `endpoint.uri`)
+- `SHARED_LAMBDA_ARN` (recommended for clean deploys and required when generated manifests still use `endpoint.sourceDir`)
 
 ### How to run it
 
@@ -22,6 +22,11 @@ This repository now includes a manual workflow at `/home/runner/work/AlexaSkills
 3. Click **Run workflow**.
 4. Choose `single` to deploy one skill or `all` to deploy every deployable folder under `/home/runner/work/AlexaSkills/AlexaSkills/GeneratedSkills`.
 5. If you choose `single`, enter the exact skill directory name, such as `007 Trivia Challenge`.
+
+
+### Local post-generation fixer
+
+Run `/home/runner/work/AlexaSkills/AlexaSkills/deploy.ps1` after generating skills when you want to normalize manifests and invocation names locally before deploying. It supports a fix-only mode and a safe deploy mode that updates existing skills without recreating them.
 
 ### How to generate the Alexa refresh token
 
@@ -37,7 +42,8 @@ If the token output was exposed outside your local machine, revoke it and genera
 - Installs Node.js and the ASK CLI.
 - Authenticates with Alexa and AWS using GitHub repository secrets.
 - Finds deployable skills by locating folders in `/home/runner/work/AlexaSkills/AlexaSkills/GeneratedSkills` that contain `ask-resources.json`.
-- Normalizes generated manifests that still use `manifest.apis.custom.endpoint.sourceDir` by replacing that endpoint with `manifest.apis.custom.endpoint.uri` from `SHARED_LAMBDA_ARN`.
+- Normalizes generated manifests before deploy by mapping unsupported categories, forcing a clean invocation name derived from the manifest name, and replacing `manifest.apis.custom.endpoint` with `manifest.apis.custom.endpoint.uri` from `SHARED_LAMBDA_ARN` when available.
 - Installs Lambda dependencies for each selected skill before deployment.
+- Updates existing skills with `ask deploy --ignore-hash` whenever `.ask/ask-states.json` already contains a skill ID so deploys stay non-destructive.
 - Deploys either the requested skill or every discovered skill.
 - Writes a success/failure summary so it is easy to see which skill failed.

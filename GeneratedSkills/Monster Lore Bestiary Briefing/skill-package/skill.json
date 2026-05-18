@@ -15,7 +15,7 @@
       },
       "isAvailableWorldwide": true,
       "testingInstructions": "Say \"Alexa, open Monster Lore Bestiary Briefing\" to launch. Follow the prompts to interact with the skill.",
-      "category": "NEWS",
+      "category": "EDUCATION_AND_REFERENCE",
       "distributionCountries": []
     },
     "apis": {

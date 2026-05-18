@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "navi language lesson of the day",
+      "invocationName": "na'vi language lesson of the day",
       "intents": [
         {
           "name": "SpeakIntent",

@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "agentr2 status reporter",
+      "invocationName": "agentr two status reporter",
       "intents": [
         {
           "name": "BriefingIntent",

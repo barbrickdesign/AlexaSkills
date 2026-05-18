@@ -15,7 +15,7 @@
       },
       "isAvailableWorldwide": true,
       "testingInstructions": "Say \"Alexa, open Davy Jones Locker Challenge Game\" to launch. Follow the prompts to interact with the skill.",
-      "category": "GAMES_TRIVIA_AND_ACCESSORIES",
+      "category": "GAMES",
       "distributionCountries": []
     },
     "apis": {

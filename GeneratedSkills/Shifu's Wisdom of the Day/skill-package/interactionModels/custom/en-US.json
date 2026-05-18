@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "shifus wisdom of the day",
+      "invocationName": "shifu's wisdom of the day",
       "intents": [
         {
           "name": "FactIntent",
