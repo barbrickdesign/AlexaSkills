@@ -13,6 +13,7 @@ This repository now includes a manual workflow at `/home/runner/work/AlexaSkills
 - `AWS_ACCESS_KEY_ID`
 - `AWS_SECRET_ACCESS_KEY`
 - `AWS_SESSION_TOKEN` (optional when using temporary AWS credentials)
+- `SHARED_LAMBDA_ARN` (required when generated manifests use `endpoint.sourceDir` instead of `endpoint.uri`)
 
 ### How to run it
 
@@ -36,6 +37,7 @@ If the token output was exposed outside your local machine, revoke it and genera
 - Installs Node.js and the ASK CLI.
 - Authenticates with Alexa and AWS using GitHub repository secrets.
 - Finds deployable skills by locating folders in `/home/runner/work/AlexaSkills/AlexaSkills/GeneratedSkills` that contain `ask-resources.json`.
+- Normalizes generated manifests that still use `manifest.apis.custom.endpoint.sourceDir` by replacing that endpoint with `manifest.apis.custom.endpoint.uri` from `SHARED_LAMBDA_ARN`.
 - Installs Lambda dependencies for each selected skill before deployment.
 - Deploys either the requested skill or every discovered skill.
 - Writes a success/failure summary so it is easy to see which skill failed.
