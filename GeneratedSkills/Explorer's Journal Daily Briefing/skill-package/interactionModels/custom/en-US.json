@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "explorers journal daily briefing",
+      "invocationName": "explorer's journal daily briefing",
       "intents": [
         {
           "name": "FactIntent",

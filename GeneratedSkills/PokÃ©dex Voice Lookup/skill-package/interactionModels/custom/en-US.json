@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "pokedex voice lookup",
+      "invocationName": "pok dex voice lookup",
       "intents": [
         {
           "name": "ActionIntent",

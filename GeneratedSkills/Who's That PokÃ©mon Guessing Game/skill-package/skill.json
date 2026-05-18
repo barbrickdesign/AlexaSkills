@@ -3,19 +3,19 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "summary": "Embark on a pocket-monster interactive adventure in Pokémon world. Make choices, face challenges, and shape the outcome of your story.",
+          "summary": "Embark on a pocket-monster interactive adventure in Pok\u00e9mon world. Make choices, face challenges, and shape the outcome of your story.",
           "examplePhrases": [
-            "Alexa, open Who's That PokÃ©mon Guessing Game",
+            "Alexa, open Who's That Pok\u00c3\u00a9mon Guessing Game",
             "start game",
             "let's play"
           ],
-          "name": "Who's That PokÃ©mon Guessing Game",
-          "description": "Embark on a pocket-monster interactive adventure in Pokémon world. Make choices, face challenges, and shape the outcome of your story."
+          "name": "Who's That Pok\u00c3\u00a9mon Guessing Game",
+          "description": "Embark on a pocket-monster interactive adventure in Pok\u00e9mon world. Make choices, face challenges, and shape the outcome of your story."
         }
       },
       "isAvailableWorldwide": true,
-      "testingInstructions": "Say \"Alexa, open Who's That PokÃ©mon Guessing Game\" to launch. Follow the prompts to interact with the skill.",
-      "category": "GAMES_TRIVIA_AND_ACCESSORIES",
+      "testingInstructions": "Say \"Alexa, open Who's That Pok\u00c3\u00a9mon Guessing Game\" to launch. Follow the prompts to interact with the skill.",
+      "category": "GAMES",
       "distributionCountries": []
     },
     "apis": {

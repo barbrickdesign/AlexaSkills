@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "daily pokemon fact briefing",
+      "invocationName": "daily pok mon fact briefing",
       "intents": [
         {
           "name": "BriefingIntent",

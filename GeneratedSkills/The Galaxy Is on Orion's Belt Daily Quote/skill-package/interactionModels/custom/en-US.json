@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "the galaxy is on orions belt daily quote",
+      "invocationName": "the galaxy is on orion's belt daily quote",
       "intents": [
         {
           "name": "QuoteIntent",

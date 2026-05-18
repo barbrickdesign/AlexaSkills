@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "torettos daily family motivation",
+      "invocationName": "toretto's daily family motivation",
       "intents": [
         {
           "name": "QuoteIntent",

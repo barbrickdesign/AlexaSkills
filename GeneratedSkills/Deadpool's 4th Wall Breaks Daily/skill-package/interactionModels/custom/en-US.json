@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "deadpools 4th wall breaks daily",
+      "invocationName": "deadpool's four th wall breaks daily",
       "intents": [
         {
           "name": "ActionIntent",

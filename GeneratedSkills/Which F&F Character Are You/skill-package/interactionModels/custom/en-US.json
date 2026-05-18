@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "which f and f character are you",
+      "invocationName": "which f f character are you",
       "intents": [
         {
           "name": "StartQuizIntent",

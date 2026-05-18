@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "f and f trivia challenge",
+      "invocationName": "f f trivia challenge",
       "intents": [
         {
           "name": "StartTriviaIntent",

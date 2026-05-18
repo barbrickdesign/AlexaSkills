@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "stars mission briefing",
+      "invocationName": "s.t.a.r.s. mission briefing",
       "intents": [
         {
           "name": "BriefingIntent",

@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "kings universe trivia challenge",
+      "invocationName": "king's universe trivia challenge",
       "intents": [
         {
           "name": "StartTriviaIntent",

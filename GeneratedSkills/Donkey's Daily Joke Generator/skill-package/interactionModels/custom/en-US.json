@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "donkeys daily joke generator",
+      "invocationName": "donkey's daily joke generator",
       "intents": [
         {
           "name": "QuoteIntent",

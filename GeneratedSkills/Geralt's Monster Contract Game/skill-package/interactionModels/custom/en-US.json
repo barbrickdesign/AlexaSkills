@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "geralts monster contract game",
+      "invocationName": "geralt's monster contract game",
       "intents": [
         {
           "name": "StartGameIntent",

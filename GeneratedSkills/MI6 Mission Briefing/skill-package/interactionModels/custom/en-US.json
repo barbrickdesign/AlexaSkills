@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "mi6 mission briefing",
+      "invocationName": "mi six mission briefing",
       "intents": [
         {
           "name": "BriefingIntent",

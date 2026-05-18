@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "mavericks daily debrief",
+      "invocationName": "maverick's daily debrief",
       "intents": [
         {
           "name": "QuoteIntent",

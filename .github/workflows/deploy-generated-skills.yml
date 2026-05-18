@@ -24,7 +24,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       ASK_REFRESH_TOKEN: ${{ secrets.ASK_REFRESH_TOKEN }}
-      # ask-cli v2 reads LWA client credentials from these specific env var names
       ASK_LWA_CLIENT_ID: ${{ secrets.ASK_CLIENT_ID }}
       ASK_LWA_CLIENT_CONFIRMATION: ${{ secrets.ASK_CLIENT_SECRET }}
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -81,9 +80,6 @@ jobs:
           import os
           from pathlib import Path
 
-          # ask-cli v2 requires the token nested under "token" with snake_case keys.
-          # expires_at is set in the past so the CLI immediately refreshes using the
-          # refresh_token (requires ASK_LWA_CLIENT_ID / ASK_LWA_CLIENT_CONFIRMATION).
           config = {
               "profiles": {
                   "default": {
@@ -115,6 +111,20 @@ jobs:
           if [ -n "${AWS_SESSION_TOKEN:-}" ]; then
             aws configure set aws_session_token "$AWS_SESSION_TOKEN"
           fi
+
+      - name: Fix shared Lambda permissions
+        if: env.SHARED_LAMBDA_ARN != ''
+        shell: bash
+        run: |
+          set -euo pipefail
+          function_name="${SHARED_LAMBDA_ARN##*:}"
+          aws lambda add-permission \
+            --function-name "$function_name" \
+            --statement-id allow-alexa-all-skills \
+            --action lambda:InvokeFunction \
+            --principal alexa-appkit.amazon.com \
+            --region us-east-1 \
+            --output text >/dev/null 2>&1 || true
 
       - name: Deploy selected skills
         shell: bash
@@ -178,72 +188,175 @@ jobs:
               continue
             fi
 
-            manifest_status="$(
-              python - "$skill_dir/skill-package/skill.json" "${SHARED_LAMBDA_ARN:-}" <<'PY'
+            normalize_status="$(
+              python - "$skill_dir" "${SHARED_LAMBDA_ARN:-}" <<'PY'
               import json
+              import re
               import sys
               from pathlib import Path
 
-              manifest_path = Path(sys.argv[1])
+              skill_dir = Path(sys.argv[1])
               shared_lambda_arn = sys.argv[2].strip()
+              manifest_path = skill_dir / "skill-package" / "skill.json"
+              ask_states_path = skill_dir / ".ask" / "ask-states.json"
+              model_candidates = [
+                  skill_dir / "models" / "en-US.json",
+                  skill_dir / "skill-package" / "interactionModels" / "custom" / "en-US.json",
+              ]
+
+              allowed_categories = {
+                  "KNOWLEDGE_AND_TRIVIA",
+                  "GAMES",
+                  "EDUCATION_AND_REFERENCE",
+                  "LIFESTYLE",
+                  "MUSIC_AND_AUDIO",
+                  "NOVELTY",
+                  "HUMOR",
+                  "MOVIES_AND_TV",
+                  "SOCIAL",
+                  "UTILITIES",
+                  "HEALTH_AND_FITNESS",
+                  "FOOD_AND_DRINK",
+                  "SMART_HOME",
+                  "KIDS",
+                  "BUSINESS_AND_FINANCE",
+                  "COMMUNICATION",
+                  "SHOPPING",
+                  "SPORTS",
+                  "WEATHER",
+              }
+              category_map = {
+                  "NOVELTY_AND_HUMOR": "NOVELTY",
+                  "PRODUCTIVITY": "UTILITIES",
+                  "GAMES_TRIVIA_AND_ACCESSORIES": "GAMES",
+                  "ENTERTAINMENT": "NOVELTY",
+                  "NEWS": "EDUCATION_AND_REFERENCE",
+              }
+              default_category = "KNOWLEDGE_AND_TRIVIA"
+
+              def read_json(path: Path):
+                  return json.loads(path.read_text(encoding="utf-8-sig"))
+
+              def write_json(path: Path, payload):
+                  path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+
+              def to_invocation_name(name: str) -> str:
+                  if not name:
+                      return "my skill"
+                  n = name.lower()
+                  for digit, word in (("0", " zero "), ("1", " one "), ("2", " two "), ("3", " three "), ("4", " four "), ("5", " five "), ("6", " six "), ("7", " seven "), ("8", " eight "), ("9", " nine ")):
+                      n = n.replace(digit, word)
+                  n = re.sub(r"[^a-z '.]", " ", n)
+                  n = re.sub(r"\s+", " ", n).strip()
+                  if not n:
+                      n = "my skill"
+                  if not re.match(r"^[a-z]", n):
+                      n = "the " + n
+                  return n
+
+              if not manifest_path.exists():
+                  print("error:missing-manifest")
+                  raise SystemExit(0)
 
               try:
-                  payload = json.loads(manifest_path.read_text(encoding="utf-8"))
+                  manifest = read_json(manifest_path)
               except Exception as exc:
-                  print(f"error:unable-to-read-manifest:{exc}")
+                  print(f"error:invalid-manifest:{exc}")
                   raise SystemExit(0)
 
-              try:
-                  endpoint = payload["manifest"]["apis"]["custom"]["endpoint"]
-              except Exception:
-                  print("error:missing-manifest-custom-endpoint")
+              manifest_root = manifest.get("manifest")
+              if not isinstance(manifest_root, dict):
+                  print("error:missing-manifest-root")
                   raise SystemExit(0)
 
+              publishing = manifest_root.setdefault("publishingInformation", {})
+              apis = manifest_root.setdefault("apis", {})
+              custom = apis.setdefault("custom", {})
+              endpoint = custom.get("endpoint")
+              if endpoint is None:
+                  endpoint = {}
+                  custom["endpoint"] = endpoint
               if not isinstance(endpoint, dict):
                   print("error:invalid-manifest-custom-endpoint")
                   raise SystemExit(0)
 
-              has_uri = isinstance(endpoint.get("uri"), str) and bool(endpoint.get("uri").strip())
+              has_uri = isinstance(endpoint.get("uri"), str) and bool(endpoint["uri"].strip())
               has_source_dir = "sourceDir" in endpoint
 
-              if has_source_dir and not has_uri:
-                  if not shared_lambda_arn:
-                      print("needs-shared-arn")
-                      raise SystemExit(0)
-                  payload["manifest"]["apis"]["custom"]["endpoint"] = {"uri": shared_lambda_arn}
-                  manifest_path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
-                  print("normalized")
+              if shared_lambda_arn:
+                  custom["endpoint"] = {"uri": shared_lambda_arn}
+              elif has_source_dir and not has_uri:
+                  print("needs-shared-arn")
                   raise SystemExit(0)
-
-              if has_uri and has_source_dir:
+              elif has_uri:
                   endpoint.pop("sourceDir", None)
-                  manifest_path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
-                  print("normalized")
+                  custom["endpoint"] = endpoint
+              else:
+                  print("error:missing-endpoint-uri")
                   raise SystemExit(0)
 
-              if has_uri:
-                  print("already-valid")
+              category = publishing.get("category")
+              publishing["category"] = category if category in allowed_categories else category_map.get(category, default_category)
+
+              locales = publishing.get("locales")
+              manifest_name = skill_dir.name
+              if isinstance(locales, dict):
+                  us_locale = locales.get("en-US")
+                  if isinstance(us_locale, dict) and us_locale.get("name"):
+                      manifest_name = str(us_locale["name"])
+
+              model_path = next((candidate for candidate in model_candidates if candidate.exists()), None)
+              if model_path is None:
+                  print("error:missing-model")
                   raise SystemExit(0)
 
-              print("error:missing-endpoint-uri")
+              try:
+                  model = read_json(model_path)
+              except Exception as exc:
+                  print(f"error:invalid-model:{exc}")
+                  raise SystemExit(0)
+
+              interaction_model = model.get("interactionModel")
+              if not isinstance(interaction_model, dict):
+                  print("error:missing-interaction-model")
+                  raise SystemExit(0)
+              language_model = interaction_model.get("languageModel")
+              if not isinstance(language_model, dict):
+                  print("error:missing-language-model")
+                  raise SystemExit(0)
+
+              language_model["invocationName"] = to_invocation_name(manifest_name)
+
+              write_json(manifest_path, manifest)
+              write_json(model_path, model)
+
+              skill_id = None
+              if ask_states_path.exists():
+                  try:
+                      ask_states = read_json(ask_states_path)
+                      skill_id = ask_states.get("profiles", {}).get("default", {}).get("skillId")
+                  except Exception:
+                      skill_id = None
+
+              print("ok:existing" if skill_id else "ok:new")
               PY
             )"
 
-            case "$manifest_status" in
-              normalized)
-                echo "Normalized manifest endpoint for $skill_name"
+            case "$normalize_status" in
+              ok:existing)
+                deploy_mode="update"
                 ;;
-              already-valid)
-                :
+              ok:new)
+                deploy_mode="create"
                 ;;
               needs-shared-arn)
-                echo "Manifest for $skill_name uses endpoint.sourceDir but SHARED_LAMBDA_ARN is not configured." >&2
+                echo "Manifest for $skill_name needs SHARED_LAMBDA_ARN to replace endpoint.sourceDir." >&2
                 failed_skills+=("$skill_name")
                 echo "::endgroup::"
                 continue
                 ;;
               *)
-                echo "Invalid manifest for $skill_name: $manifest_status" >&2
+                echo "Invalid skill package for $skill_name: $normalize_status" >&2
                 failed_skills+=("$skill_name")
                 echo "::endgroup::"
                 continue
@@ -269,13 +382,24 @@ jobs:
             echo "::endgroup::"
 
             echo "::group::Deploying $skill_name"
-            if (
-              cd "$skill_dir"
-              ask deploy --profile default
-            ); then
-              deployed_skills+=("$skill_name")
+            if [ "$deploy_mode" = "update" ]; then
+              if (
+                cd "$skill_dir"
+                ask deploy --profile default --ignore-hash
+              ); then
+                deployed_skills+=("$skill_name")
+              else
+                failed_skills+=("$skill_name")
+              fi
             else
-              failed_skills+=("$skill_name")
+              if (
+                cd "$skill_dir"
+                ask deploy --profile default
+              ); then
+                deployed_skills+=("$skill_name")
+              else
+                failed_skills+=("$skill_name")
+              fi
             fi
             echo "::endgroup::"
           done

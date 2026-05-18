@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "pokedollar vault card scout",
+      "invocationName": "pok dollar vault card scout",
       "intents": [
         {
           "name": "ActionIntent",

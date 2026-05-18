@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "grus daily former evil plan",
+      "invocationName": "gru's daily former evil plan",
       "intents": [
         {
           "name": "ActionIntent",

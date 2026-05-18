@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "pokemon type matchup oracle",
+      "invocationName": "pok mon type matchup oracle",
       "intents": [
         {
           "name": "IdentifyIntent",

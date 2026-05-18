@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "emmets construction tips",
+      "invocationName": "emmet's construction tips",
       "intents": [
         {
           "name": "AdviceIntent",

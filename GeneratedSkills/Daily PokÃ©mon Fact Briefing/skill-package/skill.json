@@ -3,19 +3,19 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "summary": "Stay informed with pocket-monster briefings and status updates from Pokémon world. Get the latest news, reports, and important information delivered by voice.",
+          "summary": "Stay informed with pocket-monster briefings and status updates from Pok\u00e9mon world. Get the latest news, reports, and important information delivered by voice.",
           "examplePhrases": [
-            "Alexa, open Daily PokÃ©mon Fact Briefing",
+            "Alexa, open Daily Pok\u00c3\u00a9mon Fact Briefing",
             "start briefing",
             "status report"
           ],
-          "name": "Daily PokÃ©mon Fact Briefing",
-          "description": "Stay informed with pocket-monster briefings and status updates from Pokémon world. Get the latest news, reports, and important information delivered by voice."
+          "name": "Daily Pok\u00c3\u00a9mon Fact Briefing",
+          "description": "Stay informed with pocket-monster briefings and status updates from Pok\u00e9mon world. Get the latest news, reports, and important information delivered by voice."
         }
       },
       "isAvailableWorldwide": true,
-      "testingInstructions": "Say \"Alexa, open Daily PokÃ©mon Fact Briefing\" to launch. Follow the prompts to interact with the skill.",
-      "category": "NEWS",
+      "testingInstructions": "Say \"Alexa, open Daily Pok\u00c3\u00a9mon Fact Briefing\" to launch. Follow the prompts to interact with the skill.",
+      "category": "EDUCATION_AND_REFERENCE",
       "distributionCountries": []
     },
     "apis": {

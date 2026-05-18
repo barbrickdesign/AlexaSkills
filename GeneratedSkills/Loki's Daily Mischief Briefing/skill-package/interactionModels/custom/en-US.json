@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "lokis daily mischief briefing",
+      "invocationName": "loki's daily mischief briefing",
       "intents": [
         {
           "name": "BriefingIntent",

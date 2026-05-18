@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "whos that pokemon guessing game",
+      "invocationName": "who's that pok mon guessing game",
       "intents": [
         {
           "name": "StartGameIntent",
