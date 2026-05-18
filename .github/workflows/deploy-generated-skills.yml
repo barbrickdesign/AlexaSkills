@@ -1,0 +1,186 @@
+name: Deploy generated Alexa skills
+
+permissions:
+  contents: read
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy_target:
+        description: Deploy a single skill or every generated skill
+        required: true
+        type: choice
+        default: single
+        options:
+          - single
+          - all
+      skill_name:
+        description: Exact GeneratedSkills directory name to deploy when deploy_target is single
+        required: false
+        type: string
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      ASK_CLIENT_ID: ${{ secrets.ASK_CLIENT_ID }}
+      ASK_CLIENT_SECRET: ${{ secrets.ASK_CLIENT_SECRET }}
+      ASK_REFRESH_TOKEN: ${{ secrets.ASK_REFRESH_TOKEN }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_SESSION_TOKEN: ${{ secrets.AWS_SESSION_TOKEN }}
+      AWS_REGION: us-east-1
+      AWS_DEFAULT_REGION: us-east-1
+      CI: true
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install ASK CLI
+        run: npm install --global ask-cli
+
+      - name: Validate deployment secrets
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          missing=()
+          required_vars=(
+            ASK_CLIENT_ID
+            ASK_CLIENT_SECRET
+            ASK_REFRESH_TOKEN
+            AWS_ACCESS_KEY_ID
+            AWS_SECRET_ACCESS_KEY
+          )
+
+          for var_name in "${required_vars[@]}"; do
+            if [ -z "${!var_name:-}" ]; then
+              missing+=("$var_name")
+            fi
+          done
+
+          if [ "${#missing[@]}" -gt 0 ]; then
+            printf 'Missing required secrets: %s\n' "${missing[*]}" >&2
+            exit 1
+          fi
+
+      - name: Deploy selected skills
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          skills_root="$GITHUB_WORKSPACE/GeneratedSkills"
+          deploy_target="${{ github.event.inputs.deploy_target }}"
+          requested_skill="${{ github.event.inputs.skill_name }}"
+
+          if [ ! -d "$skills_root" ]; then
+            echo "GeneratedSkills directory not found at $skills_root" >&2
+            exit 1
+          fi
+
+          declare -a discovered_skill_dirs=()
+          while IFS= read -r -d '' ask_file; do
+            discovered_skill_dirs+=("$(dirname "$ask_file")")
+          done < <(find "$skills_root" -mindepth 2 -maxdepth 2 -name ask-resources.json -print0 | sort -z)
+
+          if [ "${#discovered_skill_dirs[@]}" -eq 0 ]; then
+            echo "No deployable skills were found under $skills_root" >&2
+            exit 1
+          fi
+
+          declare -a selected_skill_dirs=()
+          if [ "$deploy_target" = "single" ]; then
+            if [ -z "$requested_skill" ]; then
+              echo "skill_name is required when deploy_target is single" >&2
+              exit 1
+            fi
+
+            for skill_dir in "${discovered_skill_dirs[@]}"; do
+              if [ "$(basename "$skill_dir")" = "$requested_skill" ]; then
+                selected_skill_dirs+=("$skill_dir")
+                break
+              fi
+            done
+
+            if [ "${#selected_skill_dirs[@]}" -eq 0 ]; then
+              echo "Unable to find a deployable skill named '$requested_skill'" >&2
+              echo "Available skills:" >&2
+              printf ' - %s\n' "${discovered_skill_dirs[@]##*/}" >&2
+              exit 1
+            fi
+          else
+            selected_skill_dirs=("${discovered_skill_dirs[@]}")
+          fi
+
+          declare -a failed_skills=()
+          declare -a deployed_skills=()
+
+          for skill_dir in "${selected_skill_dirs[@]}"; do
+            skill_name="$(basename "$skill_dir")"
+
+            echo "::group::Preparing $skill_name"
+            if [ ! -f "$skill_dir/lambda/package.json" ]; then
+              echo "Missing lambda/package.json for $skill_name" >&2
+              failed_skills+=("$skill_name")
+              echo "::endgroup::"
+              continue
+            fi
+
+            if ! (
+              cd "$skill_dir/lambda"
+              npm install --omit=dev --no-audit --no-fund
+            ); then
+              echo "Dependency installation failed for $skill_name" >&2
+              failed_skills+=("$skill_name")
+              echo "::endgroup::"
+              continue
+            fi
+            echo "::endgroup::"
+
+            echo "::group::Deploying $skill_name"
+            if (
+              cd "$skill_dir"
+              ask deploy --profile default
+            ); then
+              deployed_skills+=("$skill_name")
+            else
+              failed_skills+=("$skill_name")
+            fi
+            echo "::endgroup::"
+          done
+
+          {
+            echo "## Alexa skill deployment"
+            echo
+            echo "- Requested target: $deploy_target"
+            if [ "$deploy_target" = "single" ]; then
+              echo "- Requested skill: $requested_skill"
+            fi
+            echo "- Attempted: ${#selected_skill_dirs[@]}"
+            echo "- Succeeded: ${#deployed_skills[@]}"
+            echo "- Failed: ${#failed_skills[@]}"
+            echo
+
+            if [ "${#deployed_skills[@]}" -gt 0 ]; then
+              echo "### Successful deployments"
+              printf -- '- %s\n' "${deployed_skills[@]}"
+              echo
+            fi
+
+            if [ "${#failed_skills[@]}" -gt 0 ]; then
+              echo "### Failed deployments"
+              printf -- '- %s\n' "${failed_skills[@]}"
+              echo
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          if [ "${#failed_skills[@]}" -gt 0 ]; then
+            echo "One or more skill deployments failed." >&2
+            printf 'Failed skills: %s\n' "${failed_skills[*]}" >&2
+            exit 1
+          fi
