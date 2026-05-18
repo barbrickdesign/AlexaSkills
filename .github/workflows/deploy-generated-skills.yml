@@ -30,6 +30,7 @@ jobs:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       AWS_SESSION_TOKEN: ${{ secrets.AWS_SESSION_TOKEN }}
+      SHARED_LAMBDA_ARN: ${{ secrets.SHARED_LAMBDA_ARN }}
       AWS_REGION: us-east-1
       AWS_DEFAULT_REGION: us-east-1
       CI: true
@@ -170,6 +171,85 @@ jobs:
             skill_name="$(basename "$skill_dir")"
 
             echo "::group::Preparing $skill_name"
+            if [ ! -f "$skill_dir/skill-package/skill.json" ]; then
+              echo "Missing skill-package/skill.json for $skill_name" >&2
+              failed_skills+=("$skill_name")
+              echo "::endgroup::"
+              continue
+            fi
+
+            manifest_status="$(
+              python - "$skill_dir/skill-package/skill.json" "${SHARED_LAMBDA_ARN:-}" <<'PY'
+              import json
+              import sys
+              from pathlib import Path
+
+              manifest_path = Path(sys.argv[1])
+              shared_lambda_arn = sys.argv[2].strip()
+
+              try:
+                  payload = json.loads(manifest_path.read_text(encoding="utf-8"))
+              except Exception as exc:
+                  print(f"error:unable-to-read-manifest:{exc}")
+                  raise SystemExit(0)
+
+              try:
+                  endpoint = payload["manifest"]["apis"]["custom"]["endpoint"]
+              except Exception:
+                  print("error:missing-manifest-custom-endpoint")
+                  raise SystemExit(0)
+
+              if not isinstance(endpoint, dict):
+                  print("error:invalid-manifest-custom-endpoint")
+                  raise SystemExit(0)
+
+              has_uri = isinstance(endpoint.get("uri"), str) and bool(endpoint.get("uri").strip())
+              has_source_dir = "sourceDir" in endpoint
+
+              if has_source_dir and not has_uri:
+                  if not shared_lambda_arn:
+                      print("needs-shared-arn")
+                      raise SystemExit(0)
+                  payload["manifest"]["apis"]["custom"]["endpoint"] = {"uri": shared_lambda_arn}
+                  manifest_path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+                  print("normalized")
+                  raise SystemExit(0)
+
+              if has_uri and has_source_dir:
+                  endpoint.pop("sourceDir", None)
+                  manifest_path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+                  print("normalized")
+                  raise SystemExit(0)
+
+              if has_uri:
+                  print("already-valid")
+                  raise SystemExit(0)
+
+              print("error:missing-endpoint-uri")
+              PY
+            )"
+
+            case "$manifest_status" in
+              normalized)
+                echo "Normalized manifest endpoint for $skill_name"
+                ;;
+              already-valid)
+                :
+                ;;
+              needs-shared-arn)
+                echo "Manifest for $skill_name uses endpoint.sourceDir but SHARED_LAMBDA_ARN is not configured." >&2
+                failed_skills+=("$skill_name")
+                echo "::endgroup::"
+                continue
+                ;;
+              *)
+                echo "Invalid manifest for $skill_name: $manifest_status" >&2
+                failed_skills+=("$skill_name")
+                echo "::endgroup::"
+                continue
+                ;;
+            esac
+
             if [ ! -f "$skill_dir/lambda/package.json" ]; then
               echo "Missing lambda/package.json for $skill_name" >&2
               failed_skills+=("$skill_name")
