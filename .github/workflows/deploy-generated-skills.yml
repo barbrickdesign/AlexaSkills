@@ -74,18 +74,26 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p ~/.ask
-          cat <<EOF > ~/.ask/cli_config
-          {
-            "profiles": {
-              "default": {
-                "clientId": "${ASK_CLIENT_ID}",
-                "clientSecret": "${ASK_CLIENT_SECRET}",
-                "refreshToken": "${ASK_REFRESH_TOKEN}",
-                "awsProfile": "default"
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          config = {
+              "profiles": {
+                  "default": {
+                      "clientId": os.environ["ASK_CLIENT_ID"],
+                      "clientSecret": os.environ["ASK_CLIENT_SECRET"],
+                      "refreshToken": os.environ["ASK_REFRESH_TOKEN"],
+                      "awsProfile": "default",
+                  }
               }
-            }
           }
-          EOF
+
+          config_path = Path.home() / ".ask" / "cli_config"
+          config_path.write_text(json.dumps(config, indent=2), encoding="utf-8")
+          PY
+          chmod 600 ~/.ask/cli_config
 
       - name: Configure AWS credentials
         shell: bash
